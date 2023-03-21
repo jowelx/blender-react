@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Canvas } from "react-three-fiber";
 import { useControls } from "leva";
 import { OrbitControls, Bounds } from "@react-three/drei";
-//import { Model } from "./Window";
+import { Model } from "./Window";
 import { useRef } from "react";
 import { useFrame } from "react-three-fiber";
-import { Model } from "./Cube";
+//import { Model } from "./Cube";
 import { useState, useEffect } from "react";
 import { ModelNoBroken } from "./WindowNoBroken";
 function App() {
