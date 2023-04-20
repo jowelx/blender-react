@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState, useContext } from "react";
 import { Canvas } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
 import { Model } from "./Mundi";
-import "./app.css";
 
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 // Crea la instancia del renderizador y establece el nivel de filtrado anisotrópico
