@@ -12,7 +12,7 @@ export function Model(props) {
   const { actions } = useAnimations(animations, group)
   const setReft = useScrollAnimation(animations,10)
   return (
-    <group ref={setReft} {...props} dispose={null} scale={[0.7,0.7,0.7]}>
+    <group ref={setReft} {...props} dispose={null} position={[-2,-2,0]}>
       <group name="Scene">
         <mesh name="Sphere" geometry={nodes.Sphere.geometry} material={materials['Material.001']} rotation={[0, -0.29, 0]} scale={3.73} />
         <mesh name="Cube" geometry={nodes.Cube.geometry} material={materials['Material.004']} position={[-0.88, 1.09, 3.32]} rotation={[1.27, -0.08, 0.25]} scale={[0.19, 0.6, 0.19]} />

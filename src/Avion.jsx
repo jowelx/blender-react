@@ -12,7 +12,7 @@ export function ModelAvion(props) {
   const { actions } = useAnimations(animations, group)
   const setRef = useScrollAnimation(animations,10)
   return (
-    <group ref={setRef} {...props} dispose={null} position={[0,-0.9,-1]}>
+    <group ref={setRef} {...props} dispose={null} position={[-2,-2,0]}>
       <group name="Scene">
         <mesh name="Miss-Veedoh" geometry={nodes['Miss-Veedoh'].geometry} material={materials['Miss-veedoh']} position={[0.09, 2.14, 3.38]} rotation={[-0.49, 0.09, 0.01]} scale={[0.002,0.002,0.002]}>
           <mesh name="Hélice" geometry={nodes.Hélice.geometry} material={materials['Miss-veedoh']} position={[-188.49, 0, -4.12]} rotation={[-0.11, 0, 0]} />

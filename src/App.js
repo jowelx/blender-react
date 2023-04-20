@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import React, { useEffect, useRef, useState, useContext } from "react";
-import { Canvas } from "react-three-fiber";
+import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
 import { Model } from "./Mundi";
 import { ModelAvion } from "./Avion";
@@ -8,6 +8,13 @@ import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 // Crea la instancia del renderizador y establece el nivel de filtrado anisotrópico
 
 function App() {
+  function CameraControls() {
+    const { camera } = useThree();
+    camera.position.set(0, 0, 0); // ajusta la posición de la cámara
+    camera.rotation.set(0, 10, 0); // ajusta la rotación de la cámara
+
+    return null;
+  }
   const scene = new THREE.Scene();
   const hdrTextureUrl = new URL(".//bg.hdr", import.meta.url);
   const hdrTextureLoader = new RGBELoader();
@@ -43,7 +50,7 @@ function App() {
           position: "fixed",
         }}
       >
-        <Canvas shadows>
+        <Canvas shadows camera={{ rotation: [0, 1, 0] }}>
           <ambientLight intensity={0} />
           <directionalLight
             castShadow
@@ -59,9 +66,6 @@ function App() {
             <Model />
             <ModelAvion />
           </Bounds>
-          {
-            //<OrbitControls />
-          }
         </Canvas>
       </div>
     </div>
