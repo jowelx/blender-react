@@ -5,13 +5,14 @@ Command: npx gltfjsx@6.1.4 public/Mundi.glb
 
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-
+import useScrollAnimation from './hooks/scrollAnimation'
 export function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/Mundi.glb')
   const { actions } = useAnimations(animations, group)
+  const setReft = useScrollAnimation(animations,10)
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={setReft} {...props} dispose={null} scale={[0.7,0.7,0.7]}>
       <group name="Scene">
         <mesh name="Sphere" geometry={nodes.Sphere.geometry} material={materials['Material.001']} rotation={[0, -0.29, 0]} scale={3.73} />
         <mesh name="Cube" geometry={nodes.Cube.geometry} material={materials['Material.004']} position={[-0.88, 1.09, 3.32]} rotation={[1.27, -0.08, 0.25]} scale={[0.19, 0.6, 0.19]} />
