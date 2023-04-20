@@ -2,7 +2,7 @@ import * as THREE from "three";
 import React, { useEffect, useRef, useState, useContext } from "react";
 import { Canvas } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
-import { Model } from "./Esphere";
+import { Model } from "./Mundi";
 import "./app.css";
 
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
