@@ -5,31 +5,30 @@ Command: npx gltfjsx@6.1.4 public/Mundi.glb
 
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import useScrollAnimation from './hooks/scrollAnimation'
+
 export function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/Mundi.glb')
   const { actions } = useAnimations(animations, group)
-  const setRef = useScrollAnimation(animations,10)
   return (
-    <group ref={setRef} {...props} dispose={null} scale={[0.4,0.4,0.4]}>
+    <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <mesh name="Sphere" geometry={nodes.Sphere.geometry} material={materials['Material.001']} scale={3.73} />
-        <mesh name="Cube" geometry={nodes.Cube.geometry} material={materials['Material.004']} position={[0, 1.09, 3.43]} rotation={[1.26, 0, 0]} scale={[0.19, 0.06, 0.19]} />
-        <mesh name="Cube001" geometry={nodes.Cube001.geometry} material={materials.Material} position={[-0.05, 2.62, 2.48]} rotation={[0.82, 0, 0]} scale={[0.19, 0.06, 0.19]} />
-        <mesh name="Cube002" geometry={nodes.Cube002.geometry} material={materials.Material} position={[-1.2, 2.84, 1.79]} rotation={[0.72, -0.33, 0.39]} scale={[0.19, 0.08, 0.19]} />
-        <mesh name="Cube003" geometry={nodes.Cube003.geometry} material={materials.Material} position={[-2.05, 0.64, 2.82]} rotation={[1.43, -0.12, 0.62]} scale={[0.19, 0.59, 0.19]} />
-        <mesh name="Cube004" geometry={nodes.Cube004.geometry} material={materials.Material} position={[-3.13, 1.43, 0.92]} rotation={[1.67, -0.44, 1.34]} scale={[0.19, 0.59, 0.19]} />
-        <mesh name="Cube005" geometry={nodes.Cube005.geometry} material={materials['Material.004']} position={[-1.99, 2.08, 2.17]} rotation={[1.11, -0.4, 0.66]} scale={[0.19, 0.06, 0.19]} />
-        <mesh name="Cube006" geometry={nodes.Cube006.geometry} material={materials['Material.004']} position={[-3.12, 0.14, 1.49]} rotation={[1.58, 0, 0.69]} scale={[0.25, 0.06, 0.25]} />
-        <mesh name="Cube007" geometry={nodes.Cube007.geometry} material={materials.Material} position={[-1.23, 3.4, 0.29]} rotation={[0.12, -0.05, 0.29]} scale={[0.27, 0.06, 0.27]} />
-        <mesh name="Cube008" geometry={nodes.Cube008.geometry} material={materials.Material} position={[-1.96, 2.92, -0.91]} rotation={[-0.09, -0.38, 0.83]} scale={[0.27, 0.08, 0.27]} />
-        <mesh name="Cube009" geometry={nodes.Cube009.geometry} material={materials.Material} position={[-3.53, 0.49, 0.3]} rotation={[1.43, -0.12, 1.49]} scale={[0.27, 0.59, 0.27]} />
-        <mesh name="Cube010" geometry={nodes.Cube010.geometry} material={materials.Material} position={[-1.23, 2.97, -1.65]} rotation={[2.53, -0.42, 2.77]} scale={[0.2, 0.46, 0.2]} />
-        <mesh name="Cube011" geometry={nodes.Cube011.geometry} material={materials['Material.004']} position={[-3.33, 1.39, -0.15]} rotation={[1.13, -0.3, 1.46]} scale={[0.19, 0.06, 0.19]} />
-        <mesh name="Cube012" geometry={nodes.Cube012.geometry} material={materials['Material.004']} position={[-2.43, 1.36, -2.28]} rotation={[1.82, -0.27, 2.28]} scale={[0.25, 0.06, 0.25]} />
-        <mesh name="Cube013" geometry={nodes.Cube013.geometry} material={materials['Material.004']} position={[-2.32, 2.61, 1.07]} rotation={[0.92, -0.57, 0.85]} scale={[0.19, 0.06, 0.19]} />
-        <mesh name="Cube014" geometry={nodes.Cube014.geometry} material={materials.Material} position={[-3.13, 0.61, 1.66]} rotation={[0.56, 0.35, 1.15]} scale={[0.19, 0.59, 0.19]} />
+        <mesh name="Sphere" geometry={nodes.Sphere.geometry} material={materials['Material.001']} rotation={[0, -0.29, 0]} scale={3.73} />
+        <mesh name="Cube" geometry={nodes.Cube.geometry} material={materials['Material.004']} position={[-0.88, 1.09, 3.32]} rotation={[1.27, -0.08, 0.25]} scale={[0.19, 0.6, 0.19]} />
+        <mesh name="Cube001" geometry={nodes.Cube001.geometry} material={materials.Material} position={[-0.71, 2.74, 2.51]} rotation={[0.83, -0.17, 0.19]} scale={[0.19, 0.83, 0.19]} />
+        <mesh name="Cube002" geometry={nodes.Cube002.geometry} material={materials.Material} position={[-1, 3.24, 1.38]} rotation={[0.74, -0.54, 0.3]} scale={[0.19, 0.8, 0.19]} />
+        <mesh name="Cube003" geometry={nodes.Cube003.geometry} material={materials.Material} position={[-2.81, -0.04, 2.27]} rotation={[1.58, -0.01, 0.89]} scale={[0.19, 5.21, 0.19]} />
+        <mesh name="Cube004" geometry={nodes.Cube004.geometry} material={materials.Material} position={[-3.45, 0.97, 0.2]} rotation={[1.78, -0.4, 1.62]} scale={[0.19, 6.04, 0.19]} />
+        <mesh name="Cube005" geometry={nodes.Cube005.geometry} material={materials['Material.004']} position={[-1.89, 2.83, 1.23]} rotation={[0.97, -0.73, 0.77]} scale={[0.19, 0.78, 0.19]} />
+        <mesh name="Cube006" geometry={nodes.Cube006.geometry} material={materials['Material.004']} position={[-3.4, 0.14, 0.63]} rotation={[1.58, 0, 0.95]} scale={[0.25, 0.06, 0.25]} />
+        <mesh name="Cube007" geometry={nodes.Cube007.geometry} material={materials.Material} position={[-1.26, 3.4, -0.04]} rotation={[0.12, -0.3, 0.33]} scale={[0.27, 0.6, 0.27]} />
+        <mesh name="Cube008" geometry={nodes.Cube008.geometry} material={materials.Material} position={[-1.66, 2.92, -1.38]} rotation={[-0.11, -0.64, 0.8]} scale={[0.27, 0.37, 0.27]} />
+        <mesh name="Cube009" geometry={nodes.Cube009.geometry} material={materials.Material} position={[-3.48, 0.49, -0.62]} rotation={[1.47, -0.15, 1.75]} scale={[0.27, 4.05, 0.27]} />
+        <mesh name="Cube010" geometry={nodes.Cube010.geometry} material={materials.Material} position={[-0.77, 2.97, -1.91]} rotation={[2.58, -0.2, 2.92]} scale={[0.2, 5.75, 0.2]} />
+        <mesh name="Cube011" geometry={nodes.Cube011.geometry} material={materials['Material.004']} position={[-2.95, 0.48, -2.1]} rotation={[1.96, 0.11, 2.15]} scale={[0.19, 0.5, 0.19]} />
+        <mesh name="Cube012" geometry={nodes.Cube012.geometry} material={materials['Material.004']} position={[-1.76, 1.36, -2.83]} rotation={[1.88, -0.2, 2.53]} scale={[0.25, 0.41, 0.25]} />
+        <mesh name="Cube013" geometry={nodes.Cube013.geometry} material={materials['Material.004']} position={[-2.29, 2.96, -0.41]} rotation={[1.08, -0.71, 1.12]} scale={[0.19, 0.4, 0.19]} />
+        <mesh name="Cube014" geometry={nodes.Cube014.geometry} material={materials.Material} position={[-3.39, 0.35, 1.25]} rotation={[0.53, 0.13, 1.29]} scale={[0.19, 4.62, 0.19]} />
       </group>
     </group>
   )
