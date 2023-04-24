@@ -5,15 +5,15 @@ Command: npx gltfjsx@6.1.4 ../public/deliveryScene/car.gltf
 
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-
-export function ModelCar(props) {
+import useScrollAnimation from './hooks/scrollAnimation'
+export function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/deliveryScene/car.gltf')
-  const { actions } = useAnimations(animations, group)
+  const setRef= useScrollAnimation(animations,10)
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={setRef} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Sketchfab_model002" position={[26.11, 1.62, 27.65]} rotation={[-Math.PI / 2, 0, 3.07]} scale={0.5}>
+        <group name="Sketchfab_model002" position={[26.74, 1.62, 18.35]} rotation={[-1.57, 0, -2.96]} scale={0.5}>
           <group name="Mercedes_Sprinter_2006_pt2c4dfbx001" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
             <group name="Object_2001">
               <group name="RootNode001">
@@ -21,7 +21,10 @@ export function ModelCar(props) {
                   <mesh name="Autre_Autre_0" geometry={nodes.Autre_Autre_0.geometry} material={materials.Autre} />
                 </group>
                 <group name="Carrosserie001" position={[66.01, -39.71, 157.12]}>
-                  <mesh name="Carrosserie_Carrosserie_0" geometry={nodes.Carrosserie_Carrosserie_0.geometry} material={materials.Carrosserie} />
+                  <group name="Carrosserie_Carrosserie_0">
+                    <mesh name="Carrosserie_Carrosserie_0_1" geometry={nodes.Carrosserie_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh name="Carrosserie_Carrosserie_0_2" geometry={nodes.Carrosserie_Carrosserie_0_2.geometry} material={materials.Artis} />
+                  </group>
                 </group>
                 <group name="Carrosserie_5001" position={[66.01, -39.71, 157.12]}>
                   <mesh name="Carrosserie_5_Carrosserie_5_0" geometry={nodes.Carrosserie_5_Carrosserie_5_0.geometry} material={materials.Carrosserie_5} />
@@ -32,22 +35,28 @@ export function ModelCar(props) {
                 <group name="Chassis_2001" position={[26.64, 0.98, 150.14]}>
                   <mesh name="Chassis_2_Chassis_2_0" geometry={nodes.Chassis_2_Chassis_2_0.geometry} material={materials.Chassis_2} />
                 </group>
-                <group name="Interieur001" position={[53.18, 6.23, 148.02]}>
+                <group name="Interieur001" position={[53.17, 6.23, 148.02]}>
                   <mesh name="Interieur_Interrieur_0" geometry={nodes.Interieur_Interrieur_0.geometry} material={materials.Interrieur} />
                 </group>
                 <group name="Phare001" position={[26.64, 0.98, 150.14]}>
                   <mesh name="Phare_Phare_0" geometry={nodes.Phare_Phare_0.geometry} material={materials.Phare} />
                 </group>
-                <group name="Porte_1001" position={[-110.79, -7.88, -376.38]} rotation={[-Math.PI, 1.31, -Math.PI]}>
+                <group name="Porte_1001" position={[-110.79, -7.88, -376.39]} rotation={[-Math.PI, 1.31, -Math.PI]}>
                   <mesh name="Porte_1__0" geometry={nodes.Porte_1__0.geometry} material={materials.Porte_2__0} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
                   <mesh name="Porte_1_Autre_0" geometry={nodes.Porte_1_Autre_0.geometry} material={materials.Autre} rotation={[Math.PI, -1.12, Math.PI]} />
-                  <mesh name="Porte_1_Carrosserie_0" geometry={nodes.Porte_1_Carrosserie_0.geometry} material={materials.Carrosserie} position={[-0.34, 1.83, -1.58]} rotation={[Math.PI, -1.27, Math.PI]} />
+                  <group name="Porte_1_Carrosserie_0" position={[-0.34, 1.83, -1.58]} rotation={[Math.PI, -1.29, Math.PI]}>
+                    <mesh name="Porte_1_Carrosserie_0_1" geometry={nodes.Porte_1_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh name="Porte_1_Carrosserie_0_2" geometry={nodes.Porte_1_Carrosserie_0_2.geometry} material={materials.Artis} />
+                  </group>
                   <mesh name="Porte_1_Interrieur_0" geometry={nodes.Porte_1_Interrieur_0.geometry} material={materials.Interrieur} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
                 </group>
                 <group name="Porte_2001" position={[104.9, -7.88, -377.94]} rotation={[Math.PI, -1.4, Math.PI]}>
                   <mesh name="Porte_2__0" geometry={nodes.Porte_2__0.geometry} material={materials.Porte_2__0} rotation={[-Math.PI, 1.21, -Math.PI]} />
                   <mesh name="Porte_2_Autre_0" geometry={nodes.Porte_2_Autre_0.geometry} material={materials.Autre} rotation={[-Math.PI, 1.21, -Math.PI]} />
-                  <mesh name="Porte_2_Carrosserie_0" geometry={nodes.Porte_2_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[-Math.PI, 1.27, -Math.PI]} />
+                  <group name="Porte_2_Carrosserie_0" rotation={[-Math.PI, 1.27, -Math.PI]}>
+                    <mesh name="Porte_2_Carrosserie_0_1" geometry={nodes.Porte_2_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh name="Porte_2_Carrosserie_0_2" geometry={nodes.Porte_2_Carrosserie_0_2.geometry} material={materials.Artis} />
+                  </group>
                   <mesh name="Porte_2_Interrieur_0" geometry={nodes.Porte_2_Interrieur_0.geometry} material={materials.Interrieur} rotation={[-Math.PI, 1.27, -Math.PI]} />
                 </group>
                 <group name="Porte_avnt_1001" position={[129.72, -16.74, 228.3]} rotation={[0, -1.48, 0]}>
@@ -57,7 +66,7 @@ export function ModelCar(props) {
                   <mesh name="Porte_avnt_1_Interrieur_0" geometry={nodes.Porte_avnt_1_Interrieur_0.geometry} material={materials.Interrieur} rotation={[0, 1.44, 0]} />
                   <mesh name="Porte_avnt_1_Vitre_0" geometry={nodes.Porte_avnt_1_Vitre_0.geometry} material={materials.Vitre} rotation={[0, 1.44, 0]} />
                 </group>
-                <group name="Porte_avnt_2001" position={[-134.3, -16.74, 228.3]} rotation={[0, 1.48, 0]}>
+                <group name="Porte_avnt_2001" position={[-134.31, -16.74, 228.3]} rotation={[0, 1.48, 0]}>
                   <mesh name="Porte_avnt_2_Autre_0" geometry={nodes.Porte_avnt_2_Autre_0.geometry} material={materials.Autre} rotation={[0, -1.46, 0]} />
                   <mesh name="Porte_avnt_2_Carrosserie_0" geometry={nodes.Porte_avnt_2_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[0, -1.46, 0]} />
                   <mesh name="Porte_avnt_2_Chassis_0" geometry={nodes.Porte_avnt_2_Chassis_0.geometry} material={materials.Chassis} rotation={[0, -1.47, 0]} />
@@ -105,9 +114,6 @@ export function ModelCar(props) {
             <group name="Vitre" position={[41.18, -6.27, 81.93]} />
           </group>
         </group>
-        <mesh name="Material2" geometry={nodes.Material2.geometry} material={materials.Grass_0} position={[24.84, -2.36, -2.65]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
-        <mesh name="Material2001" geometry={nodes.Material2001.geometry} material={materials.RoadLines} position={[24.84, -2.36, -2.65]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
-        <mesh name="Material2003" geometry={nodes.Material2003.geometry} material={materials.Asphalt04} position={[24.84, -2.33, -2.65]} rotation={[-Math.PI / 2, 0.03, 0]} scale={0.02} />
         <mesh name="Material2004" geometry={nodes.Material2004.geometry} material={materials['material.001']} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
         <mesh name="Material3" geometry={nodes.Material3.geometry} material={materials.material_0} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
       </group>

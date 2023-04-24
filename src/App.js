@@ -2,9 +2,10 @@ import * as THREE from "three";
 import React, { useEffect, useRef, useState, useContext } from "react";
 import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
-import { Model } from "./Mundi";
-import { ModelAvion } from "./Avion";
+import { Model } from "./Car";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
+import { Fog } from "three";
+
 // Crea la instancia del renderizador y establece el nivel de filtrado anisotrópico
 
 function App() {
@@ -50,22 +51,38 @@ function App() {
           position: "fixed",
         }}
       >
-        <Canvas shadows camera={{ rotation: [0, 1, 0] }}>
-          <ambientLight intensity={0} />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+          }}
+        >
+          <video style={{ width: "100%" }} autoPlay muted loop>
+            <source src="fondo2.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <Canvas shadows camera={{ rotation: [0, 0, 0] }}>
+          <fog attach="fog" args={["#333333", -10, 100]} />
+          <ambientLight intensity={0.4} />
           <directionalLight
+            rotation={[80, 300, 0]}
             castShadow
             shadow-mapSize={[1024, 1024]}
             shadow-bias={-0.001}
             shadow-camera-near={0.5}
             shadow-camera-far={500}
-            position={[2.5, 1, 5]}
-            color="rgb(255,245,160)"
-            intensity={1}
+            position={[-4, 10, -4]}
+            color="rgb(240,190,120)"
+            intensity={1.4}
           />
           <Bounds>
             <Model />
-            <ModelAvion />
           </Bounds>
+          {<OrbitControls />}
         </Canvas>
       </div>
     </div>

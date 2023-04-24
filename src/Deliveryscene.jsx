@@ -9,423 +9,391 @@ import { useGLTF } from '@react-three/drei'
 export function Model(props) {
   const { nodes, materials } = useGLTF('/deliveryScene/deliveryscene.gltf')
   return (
-    <group {...props} dispose={null} rotation={[0,-20,0]} position={[0.2,-1,-1.4]} scale={[0.2,0.2,0.2]}>
-      <group position={[24.84, -3.6, -8.5]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02}>
-        <mesh geometry={nodes.Material2.geometry} material={materials.Grass_0} position={[-0.62, 13.73, 14.24]} />
-        <mesh geometry={nodes.Material2001.geometry} material={materials.RoadLines} position={[-0.62, 7.69, 14.24]} />
-        <mesh geometry={nodes.Material2003.geometry} material={materials.Asphalt04} position={[-0.69, 7.69, 15.99]} rotation={[0, -0.01, 0]} />
-        <mesh geometry={nodes.Material2004.geometry} material={materials['material.001']} />
-        <mesh geometry={nodes.Material3.geometry} material={materials.material_0} />
+    <group {...props} dispose={null}  rotation={[0,-20,0]} position={[0.2,-1,-1.4]} scale={[0.2,0.2,0.2]}>
+      <group position={[24.84, -3.6, -8.5]}  rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02}>
+        <mesh fog={true} receiveShadow castShadow geometry={nodes.Material2.geometry} material={materials.Grass_0} position={[-0.62, 13.73, 14.24]} />
+        <mesh fog={true} receiveShadow castShadow geometry={nodes.Material2001.geometry} material={materials.RoadLines} position={[-0.62, 7.69, 14.24]} />
+        <mesh fog={true} receiveShadow castShadow geometry={nodes.Material2003.geometry} material={materials.Asphalt04} position={[-0.69, 7.69, 15.99]} rotation={[0, -0.01, 0]} />
+        <mesh fog={true} receiveShadow castShadow geometry={nodes.Material2004.geometry} material={materials['material.001']} />
+        <mesh fog={true} receiveShadow castShadow geometry={nodes.Material3.geometry} material={materials.material_0} />
       </group>
-      <mesh geometry={nodes.Wall_outlet030_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.37, 5.22, -4.94]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet030_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.37, 5.22, -4.94]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet029_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.29, 5.22, -0.42]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet029_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.29, 5.22, -0.42]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet028_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.45, 5.22, -3.83]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet028_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.45, 5.22, -3.83]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet027_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.16, 5.22, -2.9]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet027_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.16, 5.22, -2.9]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet026_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-0.12, 5.22, -4.65]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet026_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-0.12, 5.22, -4.65]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet025_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.9, 5.22, -4.09]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet025_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.9, 5.22, -4.09]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet024_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, -2.38]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet024_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, -2.38]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet023_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.98, 5.22, 2.26]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet023_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.98, 5.22, 2.26]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet022_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.26, 5.22, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet022_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.26, 5.22, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet021_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, 3.86]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet021_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, 3.86]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet020_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, 1.08]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet020_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, 1.08]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet019_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.32, 5.22, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet019_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.32, 5.22, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet018_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.49, 5.22, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet018_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.49, 5.22, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet017_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[5.45, 2.67, -9.22]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet017_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[5.45, 2.67, -9.22]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet016_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.57, 2.67, -2.08]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet016_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.57, 2.67, -2.08]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet015_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.25, 2.67, -3.81]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet015_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.25, 2.67, -3.81]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet014_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.18, 2.67, -8.02]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet014_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.18, 2.67, -8.02]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet013_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 2.67, -7.16]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet013_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 2.67, -7.16]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet012_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 2.67, -3.23]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet012_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 2.67, -3.23]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet011_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.87, 2.67, -5.66]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet011_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.87, 2.67, -5.66]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet010_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.62, 2.67, -9.29]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet010_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.62, 2.67, -9.29]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet009_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.33, 3.39, -3.35]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet008_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.56, 3.39, -2.92]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet008_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.56, 3.39, -2.92]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet007_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.73, 3.39, -1.18]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet007_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.73, 3.39, -1.18]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet006_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-2.44, 2.67, -0.91]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet006_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-2.44, 2.67, -0.91]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet005_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.34, 3.18, -3.35]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet005_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.34, 3.18, -3.35]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet004_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.48, 2.67, -3.17]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet004_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.48, 2.67, -3.17]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet003_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.36, 2.67, -2.85]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet003_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.36, 2.67, -2.85]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet002_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.47, 2.67, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet002_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.47, 2.67, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet001_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.03, 2.67, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet001_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.03, 2.67, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[5.25, 3.6, 0.45]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.44, 2.67, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.44, 2.67, 0.46]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1072_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, -1.13]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1072_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, -1.13]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1070_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, 0.59]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1070_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, 0.59]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1068_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, 2.31]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1068_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, 2.31]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot015_Light_0.geometry} material={materials.Light} position={[3.91, 7.26, -8.52]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot015_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.91, 7.26, -8.52]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot013_Light_0.geometry} material={materials.Light} position={[5.08, 7.41, -5.97]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot013_Dark_metal_0.geometry} material={materials['Dark metal']} position={[5.08, 7.41, -5.97]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot012_Light_0.geometry} material={materials.Light} position={[6.85, 7.41, -5.97]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot012_Dark_metal_0.geometry} material={materials['Dark metal']} position={[6.85, 7.41, -5.97]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot016_Light_0.geometry} material={materials.Light} position={[3.41, 7.41, -5.6]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot016_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.41, 7.41, -5.6]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot011_Light_0.geometry} material={materials.Light} position={[0.79, 7.41, -3.77]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot011_Dark_metal_0.geometry} material={materials['Dark metal']} position={[0.79, 7.41, -3.77]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot010_Light_0.geometry} material={materials.Light} position={[7.09, 7.41, -3.69]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot010_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.09, 7.41, -3.69]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot009_Light_0.geometry} material={materials.Light} position={[3.53, 7.41, -2.9]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot009_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.53, 7.41, -2.9]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot008_Light_0.geometry} material={materials.Light} position={[3.53, 7.41, -0.88]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot008_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.53, 7.41, -0.88]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot014_Light_0.geometry} material={materials.Light} position={[7.27, 4.85, -3.14]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot014_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.27, 4.85, -3.14]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot007_Light_0.geometry} material={materials.Light} position={[-0.16, 4.85, -4.35]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot007_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-0.16, 4.85, -4.35]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot006_Light_0.geometry} material={materials.Light} position={[-0.16, 4.85, -1.49]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot006_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-0.16, 4.85, -1.49]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot001_Light_0.geometry} material={materials.Light} position={[5.04, 4.85, -3.49]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[5.04, 4.85, -3.49]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot_Light_0.geometry} material={materials.Light} position={[3.45, 4.85, -3.49]} scale={0.82} />
-      <mesh geometry={nodes.Ceiling_spot_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.45, 4.85, -3.49]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_frame_Glass_0.geometry} material={materials.Glass} position={[8.16, 2.47, -0.79]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_frame_White_wood_0.geometry} material={materials['White wood']} position={[8.16, 2.47, -0.79]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_bright_metal_0.geometry} material={materials['bright metal']} position={[8.13, 2.47, -0.38]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_Dark_metal_0.geometry} material={materials['Dark metal']} position={[8.13, 2.47, -0.38]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_Glass_0.geometry} material={materials.Glass} position={[8.13, 2.47, -0.38]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_White_wood_0.geometry} material={materials['White wood']} position={[8.13, 2.47, -0.38]} scale={0.82} />
-      <mesh geometry={nodes.Front_door_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.13, 2.47, -0.38]} scale={0.82} />
-      <mesh geometry={nodes.Loft_ladder_White_wood_0.geometry} material={materials['White wood']} position={[1.34, 6.52, -5.68]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Loft_ladder002_White_wood_0.geometry} material={materials['White wood']} position={[1.05, 7.5, -4.72]} scale={0.82} />
-      <mesh geometry={nodes.Loft_ladder001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.05, 7.47, -4.71]} scale={0.82} />
-      <mesh geometry={nodes.Loft_ladder001_White_wood_0.geometry} material={materials['White wood']} position={[1.05, 7.47, -4.71]} scale={0.82} />
-      <mesh geometry={nodes.Door_frame_White_wood_0.geometry} material={materials['White wood']} position={[4.1, 2.47, 4.89]} scale={0.82} />
-      <mesh geometry={nodes.Garage_door001_White_wood_0.geometry} material={materials['White wood']} position={[-2.98, 3.56, 15.1]} scale={0.82} />
-      <mesh geometry={nodes.Garage_door002_White_wood_0.geometry} material={materials['White wood']} position={[-2.98, 3.56, 12.19]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door005_bright_metal_0.geometry} material={materials['bright metal']} position={[1.23, 5.01, -2.78]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door005_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.23, 5.01, -2.78]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door004_bright_metal_0.geometry} material={materials['bright metal']} position={[3.84, 5.01, -4.16]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door003_bright_metal_0.geometry} material={materials['bright metal']} position={[6.48, 5.01, -4.16]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door002_bright_metal_0.geometry} material={materials['bright metal']} position={[7.62, 2.47, -2.15]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door002_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.62, 2.47, -2.15]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door001_bright_metal_0.geometry} material={materials['bright metal']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door001_White_wood_0.geometry} material={materials['White wood']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Sloped_interior_door_bright_metal_0.geometry} material={materials['bright metal']} position={[1.15, 5.01, 0.4]} scale={0.82} />
-      <mesh geometry={nodes.Sloped_interior_door_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.15, 5.01, 0.4]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door_bright_metal_0.geometry} material={materials['bright metal']} position={[1.15, 2.47, 0.4]} scale={0.82} />
-      <mesh geometry={nodes.Interior_door_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.15, 2.47, 0.4]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door015_bright_metal_0.geometry} material={materials['bright metal']} position={[-9.94, 2.47, 15.67]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door009_bright_metal_0.geometry} material={materials['bright metal']} position={[2.74, 2.47, -10.04]} rotation={[-Math.PI / 2, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door006_bright_metal_0.geometry} material={materials['bright metal']} position={[-3.4, 2.47, -3.41]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door001_bright_metal_0.geometry} material={materials['bright metal']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door001_Glass_0.geometry} material={materials.Glass} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door001_White_wood_0.geometry} material={materials['White wood']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door002_bright_metal_0.geometry} material={materials['bright metal']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door002_Dark_metal_0.geometry} material={materials['Dark metal']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door002_Glass_0.geometry} material={materials.Glass} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_door002_White_wood_0.geometry} material={materials['White wood']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.House_plan003_First_floor_plan_0.geometry} material={materials['First floor plan']} position={[-4.34, 4.03, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
-      <mesh geometry={nodes.House_plan003_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-4.34, 4.03, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
-      <mesh geometry={nodes.House_plan002_Ground_floor_plan_0.geometry} material={materials['Ground floor plan']} position={[-4.34, 3.3, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
-      <mesh geometry={nodes.House_plan002_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-4.34, 3.3, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
-      <mesh geometry={nodes.Fuse_box_Orange_wiring_0.geometry} material={materials['Orange wiring']} position={[0.34, 6.21, -4.77]} scale={0.82} />
-      <mesh geometry={nodes.Fuse_box_Glossy_white_0.geometry} material={materials['Glossy white']} position={[0.34, 6.21, -4.77]} scale={0.82} />
-      <mesh geometry={nodes.Central_Heating_Glossy_Black_2_0.geometry} material={materials['Glossy Black 2']} position={[-2.45, 5.83, -1.81]} scale={0.82} />
-      <mesh geometry={nodes.Solar_panels_Solar_panel_0.geometry} material={materials['Solar panel']} position={[-2.33, 5.63, 11.33]} rotation={[2.77, 0, -Math.PI]} scale={0.72} />
-      <mesh geometry={nodes.Solar_panels_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-2.33, 5.63, 11.33]} rotation={[2.77, 0, -Math.PI]} scale={0.72} />
-      <mesh geometry={nodes.Solar_panels001_Solar_panel_0.geometry} material={materials['Solar panel']} position={[-9.6, 5.63, 18.42]} rotation={[0.37, 0, 0]} scale={0.72} />
-      <mesh geometry={nodes.Solar_panels001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-9.6, 5.63, 18.42]} rotation={[0.37, 0, 0]} scale={0.72} />
-      <mesh geometry={nodes.Porch_fence_poles015_White_wood_0.geometry} material={materials['White wood']} position={[-9.75, 2.49, 8.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles014_White_wood_0.geometry} material={materials['White wood']} position={[-3.38, 2.49, 8.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles013_White_wood_0.geometry} material={materials['White wood']} position={[-2.8, 2.49, 11.19]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Garage_porch_fence_White_wood_0.geometry} material={materials['White wood']} position={[-1.13, 2.47, 20.04]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles006_White_wood_0.geometry} material={materials['White wood']} position={[-2.93, 2.49, 1.69]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles004_White_wood_0.geometry} material={materials['White wood']} position={[-2.61, 2.49, 6.26]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles003_White_wood_0.geometry} material={materials['White wood']} position={[1.64, 2.49, 6.44]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles002_White_wood_0.geometry} material={materials['White wood']} position={[9.24, 2.49, 6.44]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles001_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.49, 4.02]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_poles_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.49, 0.61]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole006_White_wood_0.geometry} material={materials['White wood']} position={[-4.71, 2.95, -0.98]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole005_White_wood_0.geometry} material={materials['White wood']} position={[-4.71, 2.95, 1.69]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole004_White_wood_0.geometry} material={materials['White wood']} position={[-2.7, 2.95, 1.69]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole003_White_wood_0.geometry} material={materials['White wood']} position={[-2.61, 2.95, 6.44]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.47, 0.93]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole001_White_wood_0.geometry} material={materials['White wood']} position={[1.89, 2.95, 6.44]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole_White_wood_0.geometry} material={materials['White wood']} position={[5.18, 2.95, 6.44]} scale={0.82} />
-      <mesh geometry={nodes.Porch_fence_pole002_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.95, 6.44]} scale={0.82} />
-      <mesh geometry={nodes.Handrail_Dark_metal_0.geometry} material={materials['Dark metal']} position={[4.11, 3.42, -0.01]} rotation={[0, 0, -0.61]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover057_Roof_wood_0.geometry} material={materials['Roof wood']} position={[12.19, 5.05, -5.15]} rotation={[1.57, 1.51, -1.57]} scale={[0.72, 0.82, 0.82]} />
-      <mesh geometry={nodes.Roof_Cover001_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.55, 5.05, 4.8]} rotation={[0.06, 0, 0]} scale={[0.85, 0.82, 0.82]} />
-      <mesh geometry={nodes.Roof_Cover038_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-9.56, 5.36, 10.86]} rotation={[2.99, -0.83, 3.03]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover018_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-12.46, 4.91, 11.09]} rotation={[Math.PI / 2, -1.43, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover017_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-6.55, 4.88, 8.01]} rotation={[2.98, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover016_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-4.3, 6.06, 12.53]} rotation={[2.77, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover015_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-7.71, 6.06, 17.22]} rotation={[0.37, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover008_Roof_wood_0.geometry} material={materials['Roof wood']} position={[10.21, 4.82, 4.61]} rotation={[Math.PI / 2, 1.31, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover007_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-0.03, 6.77, -2.22]} rotation={[Math.PI / 2, -1.38, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover006_Roof_wood_0.geometry} material={materials['Roof wood']} position={[7.14, 6.8, 4.69]} rotation={[Math.PI / 2, 1.39, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover005_Roof_wood_0.geometry} material={materials['Roof wood']} position={[1.34, 6.61, -1.25]} rotation={[Math.PI / 2, -1.06, Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover004_Roof_wood_0.geometry} material={materials['Roof wood']} position={[5.57, 7.65, -6.89]} rotation={[2.32, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover003_Roof_wood_0.geometry} material={materials['Roof wood']} position={[6.1, 7.65, -3.45]} rotation={[0.82, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Roof_Cover002_Roof_wood_0.geometry} material={materials['Roof wood']} position={[5.73, 6.61, -3.76]} rotation={[Math.PI / 2, 1.06, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Central_roof_cover004_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-1.1, 7.08, 14.86]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Central_roof_cover002_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.53, 7.93, 5.34]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Central_roof_cover001_Roof_wood_0.geometry} material={materials['Roof wood']} position={[12.69, 9.56, -5.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Central_roof_cover_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.53, 7.93, -10.2]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding041_Blue_wood_0.geometry} material={materials['Blue wood']} position={[5.19, 2.66, 5.17]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding040_Blue_wood_0.geometry} material={materials['Blue wood']} position={[5.58, 2.66, 4.91]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding039_Blue_wood_0.geometry} material={materials['Blue wood']} position={[1.47, 2.66, 4.78]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding034_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.92, 2.66, -4.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding024_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.18, 2.66, -6.84]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding023_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.67, 2.66, -3.99]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding022_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.42, 2.66, -3.5]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding021_Blue_wood_0.geometry} material={materials['Blue wood']} position={[11.79, 2.66, -2.63]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding017_Blue_wood_0.geometry} material={materials['Blue wood']} position={[11.3, 2.66, -2.14]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding016_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.19, 2.66, -0.08]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding015_Blue_wood_0.geometry} material={materials['Blue wood']} position={[7.7, 2.66, 0.41]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding014_Blue_wood_0.geometry} material={materials['Blue wood']} position={[0.84, 5.36, -1.32]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding013_Blue_wood_0.geometry} material={materials['Blue wood']} position={[7.08, 1.97, -1.84]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding011_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-9.94, 1.97, 17.53]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding010_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-3.86, 1.97, 10.28]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding009_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-8.34, 1.97, 10.47]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding008_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-3.66, 1.97, 11.07]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding007_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-9.14, 1.97, 11.42]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding006_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-11.09, 4.13, 17.23]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding005_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.81, 4.14, 9.82]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding004_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.07, 1.97, 12.22]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding003_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.87, 1.97, 18.34]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding002_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.74, 4.21, 4.28]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding001_Blue_wood_0.geometry} material={materials['Blue wood']} position={[6.28, 5.36, 3.82]} scale={0.82} />
-      <mesh geometry={nodes.Wall_siding_Blue_wood_0.geometry} material={materials['Blue wood']} position={[6.26, 1.97, 4.38]} scale={0.82} />
-      <mesh geometry={nodes.Window_Type_D1_White_wood_0.geometry} material={materials['White wood']} position={[12.35, 2.55, -3.54]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_B1003_Glass_0.geometry} material={materials.Glass} position={[11.81, 7.81, -5.37]} scale={[0.82, 0.67, 0.76]} />
-      <mesh geometry={nodes.Window_frame_B1003_White_wood_0.geometry} material={materials['White wood']} position={[11.81, 7.81, -5.37]} scale={[0.82, 0.67, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1064_Glass_0.geometry} material={materials.Glass} position={[2.14, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1064_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1062_Glass_0.geometry} material={materials.Glass} position={[2.14, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1062_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1061_Glass_0.geometry} material={materials.Glass} position={[4.93, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1061_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1059_Glass_0.geometry} material={materials.Glass} position={[4.93, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1059_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1058_Glass_0.geometry} material={materials.Glass} position={[2.92, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1058_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1056_Glass_0.geometry} material={materials.Glass} position={[2.92, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1056_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1055_Glass_0.geometry} material={materials.Glass} position={[4.15, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1055_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1053_Glass_0.geometry} material={materials.Glass} position={[4.15, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1053_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1052_Glass_0.geometry} material={materials.Glass} position={[6.25, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1052_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1050_Glass_0.geometry} material={materials.Glass} position={[6.25, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1050_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1049_Glass_0.geometry} material={materials.Glass} position={[0.83, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1049_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1047_Glass_0.geometry} material={materials.Glass} position={[0.83, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1047_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1028_Glass_0.geometry} material={materials.Glass} position={[10.01, 4.08, -2.17]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1028_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 4.08, -2.17]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1026_Glass_0.geometry} material={materials.Glass} position={[10.01, 3.29, -2.22]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1026_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 3.29, -2.22]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1025_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -6.4]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1025_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -6.4]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1023_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -6.4]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1023_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -6.4]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1019_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -3.94]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1019_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -3.94]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1017_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -3.94]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1017_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -3.94]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1005_Glass_0.geometry} material={materials.Glass} position={[7.08, 4.08, 2.94]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1005_White_wood_0.geometry} material={materials['White wood']} position={[7.08, 4.08, 2.94]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1003_Glass_0.geometry} material={materials.Glass} position={[7.03, 3.29, 2.94]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1003_White_wood_0.geometry} material={materials['White wood']} position={[7.03, 3.29, 2.94]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1022_Glass_0.geometry} material={materials.Glass} position={[7.08, 4.08, 1.79]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1022_White_wood_0.geometry} material={materials['White wood']} position={[7.08, 4.08, 1.79]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1020_Glass_0.geometry} material={materials.Glass} position={[7.03, 3.29, 1.79]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1020_White_wood_0.geometry} material={materials['White wood']} position={[7.03, 3.29, 1.79]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1016_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -5.17]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1016_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -5.17]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1014_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -5.17]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1014_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -5.17]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_B1_Glass_0.geometry} material={materials.Glass} position={[-2.01, 5.35, 14.67]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_B1_White_wood_0.geometry} material={materials['White wood']} position={[-2.01, 5.35, 14.67]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1078_White_wood_0.geometry} material={materials['White wood']} position={[14.61, 4.55, -5.68]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Roof_corner_pieces002_White_drywall_0.geometry} material={materials['White drywall']} position={[7.69, 5.01, -2.06]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Flat_roof_details_White_wood_0.geometry} material={materials['White wood']} position={[-3.4, 4.93, -4.11]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wood004_White_wood_0.geometry} material={materials['White wood']} position={[-17.2, 2.91, 20.32]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall004_Stone_0.geometry} material={materials.Stone} position={[-17.24, 1.98, 20.02]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 1.98, 20.02]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole004_Stone_0.geometry} material={materials.Stone} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole004_White_wood_0.geometry} material={materials['White wood']} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wood003_White_wood_0.geometry} material={materials['White wood']} position={[11.18, 2.91, 20.39]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall003_Stone_0.geometry} material={materials.Stone} position={[11.46, 1.98, 20.35]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall003_Cobblestone_0.geometry} material={materials.Cobblestone} position={[11.46, 1.98, 20.35]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole003_Cobblestone_0.geometry} material={materials.Cobblestone} position={[13.76, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole003_Stone_0.geometry} material={materials.Stone} position={[13.76, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole003_White_wood_0.geometry} material={materials['White wood']} position={[13.76, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wood002_White_wood_0.geometry} material={materials['White wood']} position={[-17.19, 2.91, 20.39]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall002_Stone_0.geometry} material={materials.Stone} position={[-16.91, 1.98, 20.35]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-16.91, 1.98, 20.35]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole002_Stone_0.geometry} material={materials.Stone} position={[-17.24, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole002_White_wood_0.geometry} material={materials['White wood']} position={[-17.24, 2.47, 20.34]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wood001_White_wood_0.geometry} material={materials['White wood']} position={[11.18, 2.91, -18.05]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch021_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.61, 3.44, -9.31]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch020_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.23, 6.09, -4.15]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch019_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.24, 6, -5.11]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch018_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[5.55, 6.4, -4.27]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch017_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.08, 6.09, -5.3]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall001_Stone_0.geometry} material={materials.Stone} position={[11.46, 1.98, -18.09]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch016_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.69, 6.09, -4.1]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch015_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.07, 6.09, -4.1]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch014_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.16, 6.09, -2.89]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch013_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.45, 6.09, -2.73]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch012_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.39, 6.09, 0.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch011_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.39, 6.09, 0.45]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch010_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.42, 3.56, -3.34]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch009_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.42, 3.43, -3.34]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch008_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.2, 3.73, 0.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch007_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.2, 3.6, 0.45]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[11.46, 1.98, -18.09]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch004_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.57, 3.44, -1.17]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch003_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.65, 3.44, -1.17]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch002_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.64, 3.35, -2.25]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Light_switch001_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.57, 3.6, -2.09]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[13.76, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet043_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.48, 5.22, 0.28]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet043_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.48, 5.22, 0.28]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet042_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[3.72, 5.69, -8.95]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet042_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[3.72, 5.69, -8.95]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet041_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.25, 5.81, -6.89]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet041_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.25, 5.81, -6.89]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole001_Stone_0.geometry} material={materials.Stone} position={[13.76, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet040_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.25, 5.81, -5.11]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet040_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.25, 5.81, -5.11]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet039_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -4.55]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet039_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -4.55]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet038_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -5.8]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet038_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -5.8]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet037_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -2.47]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet037_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -2.47]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet036_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.38, 5.22, -2.27]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet036_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.38, 5.22, -2.27]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole001_White_wood_0.geometry} material={materials['White wood']} position={[13.76, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet035_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.25, 5.22, -4.29]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet035_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.25, 5.22, -4.29]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet034_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, -8.09]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet034_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, -8.09]} rotation={[0, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet033_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.25, 5.22, -9.11]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet033_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.25, 5.22, -9.11]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet032_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[3.54, 5.22, -8.02]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet032_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[3.54, 5.22, -8.02]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet031_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.06, 5.22, -5.3]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Wall_outlet031_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.06, 5.22, -5.3]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wood_White_wood_0.geometry} material={materials['White wood']} position={[-17.19, 2.91, -18.05]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall_Stone_0.geometry} material={materials.Stone} position={[-16.91, 1.98, -18.09]} scale={0.82} />
-      <mesh geometry={nodes.Fence_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-16.91, 1.98, -18.09]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole_Stone_0.geometry} material={materials.Stone} position={[-17.24, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Fence_Pole_White_wood_0.geometry} material={materials['White wood']} position={[-17.24, 2.47, -18.1]} scale={0.82} />
-      <mesh geometry={nodes.Pool_edge_Concrete_0.geometry} material={materials.Concrete} position={[-9.24, 1.78, 2.21]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1077_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.6, 1.48]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.75, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1075_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.6, 3.2]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.75, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1073_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, -0.7]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1071_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, 1.02]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1069_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, 2.74]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_C1006_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 5.99, -9.1]} rotation={[Math.PI, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_C1004_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 5.99, -9.1]} rotation={[Math.PI, 1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_C1002_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.15, -6.66]} rotation={[-Math.PI, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_C1001_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.15, -5.43]} rotation={[-Math.PI, 0, 0]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1066_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 6.15, -2.62]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1063_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.69, 5.03]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1060_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.69, 5.03]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1057_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 6.07, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1054_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 6.07, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
-      <mesh geometry={nodes.Window_frame_A1051_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 3.69, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1048_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 3.69, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1045_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 3.69, -0.32]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1042_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 3.69, -4.92]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1039_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.69, -9.94]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1036_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.69, -9.94]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.77]} />
-      <mesh geometry={nodes.Window_frame_A1033_White_wood_0.geometry} material={materials['White wood']} position={[8.91, 3.69, -8.01]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1030_White_wood_0.geometry} material={materials['White wood']} position={[10.12, 3.69, -8.01]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1027_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 3.69, -2.28]} rotation={[-Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
-      <mesh geometry={nodes.Window_frame_A1024_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -6.4]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1018_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -3.94]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Window_frame_A1004_White_wood_0.geometry} material={materials['White wood']} position={[6.98, 3.69, 2.94]} rotation={[0, 0, -Math.PI]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1021_White_wood_0.geometry} material={materials['White wood']} position={[6.98, 3.69, 1.79]} rotation={[0, 0, -Math.PI]} scale={[0.82, 0.82, 0.74]} />
-      <mesh geometry={nodes.Window_frame_A1015_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -5.17]} rotation={[0, 0, -Math.PI]} scale={0.82} />
-      <mesh geometry={nodes.Garage_porch_ceiling001_White_wood_0.geometry} material={materials['White wood']} position={[-2.75, 4.72, 17.02]} scale={0.82} />
-      <mesh geometry={nodes.Terrain007_Grass_0.geometry} material={materials.Grass_0} position={[3.53, 1.92, 12.8]} scale={0.82} />
-      <mesh geometry={nodes.Garage_walls_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
-      <mesh geometry={nodes.Garage_walls_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
-      <mesh geometry={nodes.Garage_walls_White_wood_0.geometry} material={materials['White wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
-      <mesh geometry={nodes.Terrain005_Grass_particles_0.geometry} material={materials['Grass particles']} position={[3.53, 1.92, 12.8]} scale={0.82} />
-      <mesh geometry={nodes.Terrain003_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[3.53, 1.98, 12.8]} scale={0.82} />
-      <mesh geometry={nodes.Porch_Stairs001_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[4.12, 1.97, 6.18]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_Stairs_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[9.24, 1.97, -1.07]} scale={0.82} />
-      <mesh geometry={nodes.Terrain002_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[3.53, 1.98, 12.8]} scale={0.82} />
-      <mesh geometry={nodes.Terrain002_Stone_paths_grey_0.geometry} material={materials['Stone paths grey']} position={[3.53, 1.98, 12.8]} scale={0.82} />
-      <mesh geometry={nodes.Garage_foundation_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[0.73, 1.99, 15.27]} scale={0.82} />
-      <mesh geometry={nodes.Garage_foundation_ledge_Stone_0.geometry} material={materials.Stone} position={[0.73, 2.07, 15.27]} scale={0.82} />
-      <mesh geometry={nodes.Foundation_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[10.9, 1.99, -2.09]} scale={0.82} />
-      <mesh geometry={nodes.Foundation_ledge_Stone_0.geometry} material={materials.Stone} position={[10.9, 2.07, -2.09]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum004_Stone_0.geometry} material={materials.Stone} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum004_White_wood_0.geometry} material={materials['White wood']} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
-      <mesh geometry={nodes.Garage_porch_beams001_White_wood_0.geometry} material={materials['White wood']} position={[-4.39, 4.02, 15.59]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Porch_beams001_White_wood_0.geometry} material={materials['White wood']} position={[9.63, 4.1, -1.27]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Garage_porch_beams_White_wood_0.geometry} material={materials['White wood']} position={[-4.39, 3.94, 15.59]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum002_Stone_0.geometry} material={materials.Stone} position={[-2.43, 1.57, 3.86]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum002_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 1.57, 3.86]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-2.43, 1.57, 3.86]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum001_Stone_0.geometry} material={materials.Stone} position={[9.42, 1.57, 0.47]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum001_White_wood_0.geometry} material={materials['White wood']} position={[9.42, 1.57, 0.47]} scale={0.82} />
-      <mesh geometry={nodes.Porch_collum001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[9.42, 1.57, 0.47]} scale={0.82} />
-      <mesh geometry={nodes.Porch_beams_White_wood_0.geometry} material={materials['White wood']} position={[9.63, 4.02, -1.27]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
-      <mesh geometry={nodes.porch_ceiling_White_wood_0.geometry} material={materials['White wood']} position={[8.32, 4.72, 3.16]} scale={0.82} />
-      <mesh geometry={nodes.Garage_porch_floor_Porch_wood_0.geometry} material={materials['Porch wood']} position={[4.58, 3.54, 25.22]} scale={0.82} />
-      <mesh geometry={nodes.porch_floor_Porch_wood_0.geometry} material={materials['Porch wood']} position={[15.02, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Interior_floors_Roof_wood_0.geometry} material={materials['Roof wood']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Garage_roof_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
-      <mesh geometry={nodes.Garage_roof_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
-      <mesh geometry={nodes.Garage_roof_White_wood_0.geometry} material={materials['White wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
-      <mesh geometry={nodes.Roof_White_drywall_0.geometry} material={materials['White drywall']} position={[12.54, 5.91, -1.93]} scale={0.82} />
-      <mesh geometry={nodes.Roof_White_wood_0.geometry} material={materials['White wood']} position={[12.54, 5.91, -1.93]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_walls_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_walls_Bathroom_walls_0.geometry} material={materials['Bathroom walls']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_walls_White_drywall_0.geometry} material={materials['White drywall']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_walls_Painted_drywall_0.geometry} material={materials['Painted drywall']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Exterior_walls_White_wood_0.geometry} material={materials['White wood']} position={[8.24, 3.54, 8.66]} scale={0.82} />
-      <mesh geometry={nodes.Porch_Stairs_Stone_paths_0001.geometry} material={materials['Stone paths_0']} position={[21.67, 0.63, -1.07]} scale={0.82} />
-      <mesh geometry={nodes.Plane.geometry} material={materials['Material.003']} position={[-14.9, 60, -209.53]} rotation={[0, 0, -Math.PI / 2]} scale={[112.86, 3.31, 380.27]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet030_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.37, 5.22, -4.94]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet030_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.37, 5.22, -4.94]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet029_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.29, 5.22, -0.42]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet029_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.29, 5.22, -0.42]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet026_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-0.12, 5.22, -4.65]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet026_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-0.12, 5.22, -4.65]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet025_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.9, 5.22, -4.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet025_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.9, 5.22, -4.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet023_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[6.98, 5.22, 2.26]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet023_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.98, 5.22, 2.26]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet022_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.26, 5.22, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet022_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.26, 5.22, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet021_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, 3.86]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet021_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, 3.86]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet020_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, 1.08]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet020_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, 1.08]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet019_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.32, 5.22, 0.46]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet019_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.32, 5.22, 0.46]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet017_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[5.45, 2.67, -9.22]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet017_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[5.45, 2.67, -9.22]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet015_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.25, 2.67, -3.81]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet015_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.25, 2.67, -3.81]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet014_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.18, 2.67, -8.02]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet014_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.18, 2.67, -8.02]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet013_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 2.67, -7.16]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet013_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 2.67, -7.16]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet012_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 2.67, -3.23]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet012_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 2.67, -3.23]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet011_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.87, 2.67, -5.66]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet011_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.87, 2.67, -5.66]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet010_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.62, 2.67, -9.29]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet010_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.62, 2.67, -9.29]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet006_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-2.44, 2.67, -0.91]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet006_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-2.44, 2.67, -0.91]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet005_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.34, 3.18, -3.35]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet005_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.34, 3.18, -3.35]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet004_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[-1.48, 2.67, -3.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet004_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.48, 2.67, -3.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet002_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.47, 2.67, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet002_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.47, 2.67, 4.3]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1072_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, -1.13]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1072_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, -1.13]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1070_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, 0.59]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1070_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, 0.59]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1068_Glass_0.geometry} material={materials.Glass} position={[7.02, 6.64, 2.31]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1068_White_wood_0.geometry} material={materials['White wood']} position={[7.02, 6.64, 2.31]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot015_Light_0.geometry} material={materials.Light} position={[3.91, 7.26, -8.52]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot015_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.91, 7.26, -8.52]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot012_Light_0.geometry} material={materials.Light} position={[6.85, 7.41, -5.97]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot012_Dark_metal_0.geometry} material={materials['Dark metal']} position={[6.85, 7.41, -5.97]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot016_Light_0.geometry} material={materials.Light} position={[3.41, 7.41, -5.6]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot016_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.41, 7.41, -5.6]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot011_Light_0.geometry} material={materials.Light} position={[0.79, 7.41, -3.77]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot011_Dark_metal_0.geometry} material={materials['Dark metal']} position={[0.79, 7.41, -3.77]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot010_Light_0.geometry} material={materials.Light} position={[7.09, 7.41, -3.69]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot010_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.09, 7.41, -3.69]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot009_Light_0.geometry} material={materials.Light} position={[3.53, 7.41, -2.9]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot009_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.53, 7.41, -2.9]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot008_Light_0.geometry} material={materials.Light} position={[3.53, 7.41, -0.88]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot008_Dark_metal_0.geometry} material={materials['Dark metal']} position={[3.53, 7.41, -0.88]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot014_Light_0.geometry} material={materials.Light} position={[7.27, 4.85, -3.14]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot014_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.27, 4.85, -3.14]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot007_Light_0.geometry} material={materials.Light} position={[-0.16, 4.85, -4.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot007_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-0.16, 4.85, -4.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot006_Light_0.geometry} material={materials.Light} position={[-0.16, 4.85, -1.49]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Ceiling_spot006_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-0.16, 4.85, -1.49]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_frame_Glass_0.geometry} material={materials.Glass} position={[8.16, 2.47, -0.79]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_frame_White_wood_0.geometry} material={materials['White wood']} position={[8.16, 2.47, -0.79]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_bright_metal_0.geometry} material={materials['bright metal']} position={[8.13, 2.47, -0.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_Dark_metal_0.geometry} material={materials['Dark metal']} position={[8.13, 2.47, -0.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_Glass_0.geometry} material={materials.Glass} position={[8.13, 2.47, -0.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_White_wood_0.geometry} material={materials['White wood']} position={[8.13, 2.47, -0.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Front_door_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.13, 2.47, -0.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Loft_ladder_White_wood_0.geometry} material={materials['White wood']} position={[1.34, 6.52, -5.68]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Loft_ladder002_White_wood_0.geometry} material={materials['White wood']} position={[1.05, 7.5, -4.72]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Loft_ladder001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.05, 7.47, -4.71]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Loft_ladder001_White_wood_0.geometry} material={materials['White wood']} position={[1.05, 7.47, -4.71]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Door_frame_White_wood_0.geometry} material={materials['White wood']} position={[4.1, 2.47, 4.89]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_door001_White_wood_0.geometry} material={materials['White wood']} position={[-2.98, 3.56, 15.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_door002_White_wood_0.geometry} material={materials['White wood']} position={[-2.98, 3.56, 12.19]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door003_bright_metal_0.geometry} material={materials['bright metal']} position={[6.48, 5.01, -4.16]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door002_bright_metal_0.geometry} material={materials['bright metal']} position={[7.62, 2.47, -2.15]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door002_Dark_metal_0.geometry} material={materials['Dark metal']} position={[7.62, 2.47, -2.15]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door001_bright_metal_0.geometry} material={materials['bright metal']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_door001_White_wood_0.geometry} material={materials['White wood']} position={[8.13, 5.01, -3.16]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Sloped_interior_door_bright_metal_0.geometry} material={materials['bright metal']} position={[1.15, 5.01, 0.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Sloped_interior_door_Dark_metal_0.geometry} material={materials['Dark metal']} position={[1.15, 5.01, 0.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door015_bright_metal_0.geometry} material={materials['bright metal']} position={[-9.94, 2.47, 15.67]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door009_bright_metal_0.geometry} material={materials['bright metal']} position={[2.74, 2.47, -10.04]} rotation={[-Math.PI / 2, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door006_bright_metal_0.geometry} material={materials['bright metal']} position={[-3.4, 2.47, -3.41]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door001_bright_metal_0.geometry} material={materials['bright metal']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door001_Glass_0.geometry} material={materials.Glass} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door001_White_wood_0.geometry} material={materials['White wood']} position={[2.74, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door002_bright_metal_0.geometry} material={materials['bright metal']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door002_Dark_metal_0.geometry} material={materials['Dark metal']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door002_Glass_0.geometry} material={materials.Glass} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_door002_White_wood_0.geometry} material={materials['White wood']} position={[4.33, 2.47, 5.13]} rotation={[-Math.PI / 2, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.House_plan003_First_floor_plan_0.geometry} material={materials['First floor plan']} position={[-4.34, 4.03, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.House_plan003_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-4.34, 4.03, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.House_plan002_Ground_floor_plan_0.geometry} material={materials['Ground floor plan']} position={[-4.34, 3.3, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.House_plan002_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-4.34, 3.3, 18.25]} rotation={[0, -1.57, 0]} scale={1.04} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fuse_box_Orange_wiring_0.geometry} material={materials['Orange wiring']} position={[0.34, 6.21, -4.77]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fuse_box_Glossy_white_0.geometry} material={materials['Glossy white']} position={[0.34, 6.21, -4.77]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Central_Heating_Glossy_Black_2_0.geometry} material={materials['Glossy Black 2']} position={[-2.45, 5.83, -1.81]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Solar_panels_Solar_panel_0.geometry} material={materials['Solar panel']} position={[-2.33, 5.63, 11.33]} rotation={[2.77, 0, -Math.PI]} scale={0.72} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Solar_panels_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-2.33, 5.63, 11.33]} rotation={[2.77, 0, -Math.PI]} scale={0.72} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Solar_panels001_Solar_panel_0.geometry} material={materials['Solar panel']} position={[-9.6, 5.63, 18.42]} rotation={[0.37, 0, 0]} scale={0.72} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Solar_panels001_Dark_metal_0.geometry} material={materials['Dark metal']} position={[-9.6, 5.63, 18.42]} rotation={[0.37, 0, 0]} scale={0.72} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles015_White_wood_0.geometry} material={materials['White wood']} position={[-9.75, 2.49, 8.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles014_White_wood_0.geometry} material={materials['White wood']} position={[-3.38, 2.49, 8.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles013_White_wood_0.geometry} material={materials['White wood']} position={[-2.8, 2.49, 11.19]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_porch_fence_White_wood_0.geometry} material={materials['White wood']} position={[-1.13, 2.47, 20.04]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles006_White_wood_0.geometry} material={materials['White wood']} position={[-2.93, 2.49, 1.69]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles004_White_wood_0.geometry} material={materials['White wood']} position={[-2.61, 2.49, 6.26]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles003_White_wood_0.geometry} material={materials['White wood']} position={[1.64, 2.49, 6.44]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles002_White_wood_0.geometry} material={materials['White wood']} position={[9.24, 2.49, 6.44]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles001_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.49, 4.02]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_poles_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.49, 0.61]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole006_White_wood_0.geometry} material={materials['White wood']} position={[-4.71, 2.95, -0.98]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole005_White_wood_0.geometry} material={materials['White wood']} position={[-4.71, 2.95, 1.69]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole004_White_wood_0.geometry} material={materials['White wood']} position={[-2.7, 2.95, 1.69]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole003_White_wood_0.geometry} material={materials['White wood']} position={[-2.61, 2.95, 6.44]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.47, 0.93]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole001_White_wood_0.geometry} material={materials['White wood']} position={[1.89, 2.95, 6.44]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole_White_wood_0.geometry} material={materials['White wood']} position={[5.18, 2.95, 6.44]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_fence_pole002_White_wood_0.geometry} material={materials['White wood']} position={[9.51, 2.95, 6.44]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover057_Roof_wood_0.geometry} material={materials['Roof wood']} position={[12.19, 5.05, -5.15]} rotation={[1.57, 1.51, -1.57]} scale={[0.72, 0.82, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover001_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.55, 5.05, 4.8]} rotation={[0.06, 0, 0]} scale={[0.85, 0.82, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover038_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-9.56, 5.36, 10.86]} rotation={[2.99, -0.83, 3.03]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover018_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-12.46, 4.91, 11.09]} rotation={[Math.PI / 2, -1.43, Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover017_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-6.55, 4.88, 8.01]} rotation={[2.98, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover016_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-4.3, 6.06, 12.53]} rotation={[2.77, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover015_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-7.71, 6.06, 17.22]} rotation={[0.37, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover008_Roof_wood_0.geometry} material={materials['Roof wood']} position={[10.21, 4.82, 4.61]} rotation={[Math.PI / 2, 1.31, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover006_Roof_wood_0.geometry} material={materials['Roof wood']} position={[7.14, 6.8, 4.69]} rotation={[Math.PI / 2, 1.39, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover005_Roof_wood_0.geometry} material={materials['Roof wood']} position={[1.34, 6.61, -1.25]} rotation={[Math.PI / 2, -1.06, Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover004_Roof_wood_0.geometry} material={materials['Roof wood']} position={[5.57, 7.65, -6.89]} rotation={[2.32, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover003_Roof_wood_0.geometry} material={materials['Roof wood']} position={[6.1, 7.65, -3.45]} rotation={[0.82, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_Cover002_Roof_wood_0.geometry} material={materials['Roof wood']} position={[5.73, 6.61, -3.76]} rotation={[Math.PI / 2, 1.06, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Central_roof_cover004_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-1.1, 7.08, 14.86]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Central_roof_cover002_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.53, 7.93, 5.34]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Central_roof_cover001_Roof_wood_0.geometry} material={materials['Roof wood']} position={[12.69, 9.56, -5.16]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Central_roof_cover_Roof_wood_0.geometry} material={materials['Roof wood']} position={[3.53, 7.93, -10.2]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding041_Blue_wood_0.geometry} material={materials['Blue wood']} position={[5.19, 2.66, 5.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding040_Blue_wood_0.geometry} material={materials['Blue wood']} position={[5.58, 2.66, 4.91]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding039_Blue_wood_0.geometry} material={materials['Blue wood']} position={[1.47, 2.66, 4.78]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding034_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.92, 2.66, -4.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding024_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.18, 2.66, -6.84]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding023_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.67, 2.66, -3.99]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding022_Blue_wood_0.geometry} material={materials['Blue wood']} position={[12.42, 2.66, -3.5]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding021_Blue_wood_0.geometry} material={materials['Blue wood']} position={[11.79, 2.66, -2.63]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding017_Blue_wood_0.geometry} material={materials['Blue wood']} position={[11.3, 2.66, -2.14]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding016_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.19, 2.66, -0.08]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding015_Blue_wood_0.geometry} material={materials['Blue wood']} position={[7.7, 2.66, 0.41]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding014_Blue_wood_0.geometry} material={materials['Blue wood']} position={[0.84, 5.36, -1.32]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding013_Blue_wood_0.geometry} material={materials['Blue wood']} position={[7.08, 1.97, -1.84]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding011_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-9.94, 1.97, 17.53]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding010_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-3.86, 1.97, 10.28]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding009_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-8.34, 1.97, 10.47]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding008_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-3.66, 1.97, 11.07]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding007_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-9.14, 1.97, 11.42]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding006_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-11.09, 4.13, 17.23]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding005_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.81, 4.14, 9.82]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding004_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.07, 1.97, 12.22]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding003_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-2.87, 1.97, 18.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding002_Blue_wood_0.geometry} material={materials['Blue wood']} position={[8.74, 4.21, 4.28]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding001_Blue_wood_0.geometry} material={materials['Blue wood']} position={[6.28, 5.36, 3.82]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_siding_Blue_wood_0.geometry} material={materials['Blue wood']} position={[6.26, 1.97, 4.38]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_Type_D1_White_wood_0.geometry} material={materials['White wood']} position={[12.35, 2.55, -3.54]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_B1003_Glass_0.geometry} material={materials.Glass} position={[11.81, 7.81, -5.37]} scale={[0.82, 0.67, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_B1003_White_wood_0.geometry} material={materials['White wood']} position={[11.81, 7.81, -5.37]} scale={[0.82, 0.67, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1064_Glass_0.geometry} material={materials.Glass} position={[2.14, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1064_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1062_Glass_0.geometry} material={materials.Glass} position={[2.14, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1062_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1061_Glass_0.geometry} material={materials.Glass} position={[4.93, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1061_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 4.08, 5.13]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1059_Glass_0.geometry} material={materials.Glass} position={[4.93, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1059_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.29, 5.08]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1058_Glass_0.geometry} material={materials.Glass} position={[2.92, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1058_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1056_Glass_0.geometry} material={materials.Glass} position={[2.92, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1056_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1055_Glass_0.geometry} material={materials.Glass} position={[4.15, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1055_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 6.43, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1053_Glass_0.geometry} material={materials.Glass} position={[4.15, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1053_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 5.71, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1052_Glass_0.geometry} material={materials.Glass} position={[6.25, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1052_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1050_Glass_0.geometry} material={materials.Glass} position={[6.25, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1050_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1049_Glass_0.geometry} material={materials.Glass} position={[0.83, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1049_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 4.08, 4.39]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1047_Glass_0.geometry} material={materials.Glass} position={[0.83, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1047_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 3.29, 4.34]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1028_Glass_0.geometry} material={materials.Glass} position={[10.01, 4.08, -2.17]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1028_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 4.08, -2.17]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1026_Glass_0.geometry} material={materials.Glass} position={[10.01, 3.29, -2.22]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1026_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 3.29, -2.22]} rotation={[0, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1025_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -6.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1025_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -6.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1023_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -6.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1023_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -6.4]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1019_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -3.94]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1019_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -3.94]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1017_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -3.94]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1017_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -3.94]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1005_Glass_0.geometry} material={materials.Glass} position={[7.08, 4.08, 2.94]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1005_White_wood_0.geometry} material={materials['White wood']} position={[7.08, 4.08, 2.94]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1003_Glass_0.geometry} material={materials.Glass} position={[7.03, 3.29, 2.94]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1003_White_wood_0.geometry} material={materials['White wood']} position={[7.03, 3.29, 2.94]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1022_Glass_0.geometry} material={materials.Glass} position={[7.08, 4.08, 1.79]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1022_White_wood_0.geometry} material={materials['White wood']} position={[7.08, 4.08, 1.79]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1020_Glass_0.geometry} material={materials.Glass} position={[7.03, 3.29, 1.79]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1020_White_wood_0.geometry} material={materials['White wood']} position={[7.03, 3.29, 1.79]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1016_Glass_0.geometry} material={materials.Glass} position={[11.75, 6.54, -5.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1016_White_wood_0.geometry} material={materials['White wood']} position={[11.75, 6.54, -5.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1014_Glass_0.geometry} material={materials.Glass} position={[11.7, 5.75, -5.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1014_White_wood_0.geometry} material={materials['White wood']} position={[11.7, 5.75, -5.17]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_B1_Glass_0.geometry} material={materials.Glass} position={[-2.01, 5.35, 14.67]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_B1_White_wood_0.geometry} material={materials['White wood']} position={[-2.01, 5.35, 14.67]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1078_White_wood_0.geometry} material={materials['White wood']} position={[14.61, 4.55, -5.68]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_corner_pieces002_White_drywall_0.geometry} material={materials['White drywall']} position={[7.69, 5.01, -2.06]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Flat_roof_details_White_wood_0.geometry} material={materials['White wood']} position={[-3.4, 4.93, -4.11]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wood004_White_wood_0.geometry} material={materials['White wood']} position={[-17.2, 2.91, 20.32]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall004_Stone_0.geometry} material={materials.Stone} position={[-17.24, 1.98, 20.02]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 1.98, 20.02]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole004_Stone_0.geometry} material={materials.Stone} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole004_White_wood_0.geometry} material={materials['White wood']} position={[-17.25, 2.47, 17.78]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wood003_White_wood_0.geometry} material={materials['White wood']} position={[11.18, 2.91, 20.39]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall003_Stone_0.geometry} material={materials.Stone} position={[11.46, 1.98, 20.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall003_Cobblestone_0.geometry} material={materials.Cobblestone} position={[11.46, 1.98, 20.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole003_Cobblestone_0.geometry} material={materials.Cobblestone} position={[13.76, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole003_Stone_0.geometry} material={materials.Stone} position={[13.76, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole003_White_wood_0.geometry} material={materials['White wood']} position={[13.76, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wood002_White_wood_0.geometry} material={materials['White wood']} position={[-17.19, 2.91, 20.39]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall002_Stone_0.geometry} material={materials.Stone} position={[-16.91, 1.98, 20.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-16.91, 1.98, 20.35]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole002_Stone_0.geometry} material={materials.Stone} position={[-17.24, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole002_White_wood_0.geometry} material={materials['White wood']} position={[-17.24, 2.47, 20.34]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wood001_White_wood_0.geometry} material={materials['White wood']} position={[11.18, 2.91, -18.05]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch021_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.61, 3.44, -9.31]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch020_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.23, 6.09, -4.15]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall001_Stone_0.geometry} material={materials.Stone} position={[11.46, 1.98, -18.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch016_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[6.69, 6.09, -4.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch012_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.39, 6.09, 0.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch011_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.39, 6.09, 0.45]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch010_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.42, 3.56, -3.34]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch009_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[-1.42, 3.43, -3.34]} rotation={[-Math.PI, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch008_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.2, 3.73, 0.29]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Light_switch007_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.2, 3.6, 0.45]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[11.46, 1.98, -18.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[13.76, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet043_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[1.48, 5.22, 0.28]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet043_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[1.48, 5.22, 0.28]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet042_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[3.72, 5.69, -8.95]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet042_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[3.72, 5.69, -8.95]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet041_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[4.25, 5.81, -6.89]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet041_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[4.25, 5.81, -6.89]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole001_Stone_0.geometry} material={materials.Stone} position={[13.76, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet039_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -4.55]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet039_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -4.55]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet038_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -5.8]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet038_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -5.8]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet037_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[11.66, 5.22, -2.47]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet037_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[11.66, 5.22, -2.47]} rotation={[0, -Math.PI / 2, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet036_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.38, 5.22, -2.27]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet036_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.38, 5.22, -2.27]} rotation={[Math.PI, 0, Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole001_White_wood_0.geometry} material={materials['White wood']} position={[13.76, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet035_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[8.25, 5.22, -4.29]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet035_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[8.25, 5.22, -4.29]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet034_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[0.13, 5.22, -8.09]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet034_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[0.13, 5.22, -8.09]} rotation={[0, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet033_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[2.25, 5.22, -9.11]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet033_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[2.25, 5.22, -9.11]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet032_Wall_socket_black_0.geometry} material={materials['Wall socket black']} position={[3.54, 5.22, -8.02]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Wall_outlet032_Wall_socket_white_0.geometry} material={materials['Wall socket white']} position={[3.54, 5.22, -8.02]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wood_White_wood_0.geometry} material={materials['White wood']} position={[-17.19, 2.91, -18.05]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall_Stone_0.geometry} material={materials.Stone} position={[-16.91, 1.98, -18.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-16.91, 1.98, -18.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-17.24, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole_Stone_0.geometry} material={materials.Stone} position={[-17.24, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Fence_Pole_White_wood_0.geometry} material={materials['White wood']} position={[-17.24, 2.47, -18.1]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Pool_edge_Concrete_0.geometry} material={materials.Concrete} position={[-9.24, 1.78, 2.21]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1077_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.6, 1.48]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.75, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1075_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.6, 3.2]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.75, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1073_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, -0.7]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1071_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, 1.02]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1069_White_wood_0.geometry} material={materials['White wood']} position={[6.97, 6.64, 2.74]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_C1006_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 5.99, -9.1]} rotation={[Math.PI, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_C1004_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 5.99, -9.1]} rotation={[Math.PI, 1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_C1002_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.15, -6.66]} rotation={[-Math.PI, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_C1001_White_wood_0.geometry} material={materials['White wood']} position={[0.14, 6.15, -5.43]} rotation={[-Math.PI, 0, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1066_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 6.15, -2.62]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1063_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.69, 5.03]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1060_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.69, 5.03]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1057_White_wood_0.geometry} material={materials['White wood']} position={[2.92, 6.07, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1054_White_wood_0.geometry} material={materials['White wood']} position={[4.15, 6.07, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.74, 0.82]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1051_White_wood_0.geometry} material={materials['White wood']} position={[6.25, 3.69, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1048_White_wood_0.geometry} material={materials['White wood']} position={[0.83, 3.69, 4.29]} rotation={[Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1045_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 3.69, -0.32]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1042_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 3.69, -4.92]} rotation={[-Math.PI, 0, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1039_White_wood_0.geometry} material={materials['White wood']} position={[2.14, 3.69, -9.94]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1036_White_wood_0.geometry} material={materials['White wood']} position={[4.93, 3.69, -9.94]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.77]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1033_White_wood_0.geometry} material={materials['White wood']} position={[8.91, 3.69, -8.01]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1030_White_wood_0.geometry} material={materials['White wood']} position={[10.12, 3.69, -8.01]} rotation={[-Math.PI, 1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1027_White_wood_0.geometry} material={materials['White wood']} position={[10.01, 3.69, -2.28]} rotation={[-Math.PI, -1.57, 0]} scale={[0.82, 0.82, 0.76]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1024_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -6.4]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1018_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -3.94]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1004_White_wood_0.geometry} material={materials['White wood']} position={[6.98, 3.69, 2.94]} rotation={[0, 0, -Math.PI]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1021_White_wood_0.geometry} material={materials['White wood']} position={[6.98, 3.69, 1.79]} rotation={[0, 0, -Math.PI]} scale={[0.82, 0.82, 0.74]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Window_frame_A1015_White_wood_0.geometry} material={materials['White wood']} position={[11.65, 6.15, -5.17]} rotation={[0, 0, -Math.PI]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_porch_ceiling001_White_wood_0.geometry} material={materials['White wood']} position={[-2.75, 4.72, 17.02]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Terrain007_Grass_0.geometry} material={materials.Grass_0} position={[3.53, 1.92, 12.8]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_walls_Blue_wood_0.geometry} material={materials['Blue wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_walls_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_walls_White_wood_0.geometry} material={materials['White wood']} position={[-6.18, 3.54, 14.55]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Terrain005_Grass_particles_0.geometry} material={materials['Grass particles']} position={[3.53, 1.92, 12.8]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Terrain003_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[3.53, 1.98, 12.8]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_Stairs001_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[4.12, 1.97, 6.18]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_Stairs_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[9.24, 1.97, -1.07]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Terrain002_Stone_paths_0.geometry} material={materials['Stone paths_0']} position={[3.53, 1.98, 12.8]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Terrain002_Stone_paths_grey_0.geometry} material={materials['Stone paths grey']} position={[3.53, 1.98, 12.8]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_foundation_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[0.73, 1.99, 15.27]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_foundation_ledge_Stone_0.geometry} material={materials.Stone} position={[0.73, 2.07, 15.27]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Foundation_wall_Cobblestone_0.geometry} material={materials.Cobblestone} position={[10.9, 1.99, -2.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Foundation_ledge_Stone_0.geometry} material={materials.Stone} position={[10.9, 2.07, -2.09]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum004_Stone_0.geometry} material={materials.Stone} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum004_White_wood_0.geometry} material={materials['White wood']} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum004_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-3.18, 1.57, 8.33]} rotation={[0, -1.57, 0]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_porch_beams001_White_wood_0.geometry} material={materials['White wood']} position={[-4.39, 4.02, 15.59]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_beams001_White_wood_0.geometry} material={materials['White wood']} position={[9.63, 4.1, -1.27]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_porch_beams_White_wood_0.geometry} material={materials['White wood']} position={[-4.39, 3.94, 15.59]} rotation={[0, 0, -Math.PI / 2]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum002_Stone_0.geometry} material={materials.Stone} position={[-2.43, 1.57, 3.86]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum002_White_wood_0.geometry} material={materials['White wood']} position={[-2.43, 1.57, 3.86]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum002_Cobblestone_0.geometry} material={materials.Cobblestone} position={[-2.43, 1.57, 3.86]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum001_Stone_0.geometry} material={materials.Stone} position={[9.42, 1.57, 0.47]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum001_White_wood_0.geometry} material={materials['White wood']} position={[9.42, 1.57, 0.47]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_collum001_Cobblestone_0.geometry} material={materials.Cobblestone} position={[9.42, 1.57, 0.47]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.porch_ceiling_White_wood_0.geometry} material={materials['White wood']} position={[8.32, 4.72, 3.16]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_porch_floor_Porch_wood_0.geometry} material={materials['Porch wood']} position={[4.58, 3.54, 25.22]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.porch_floor_Porch_wood_0.geometry} material={materials['Porch wood']} position={[15.02, 3.54, 8.66]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Interior_floors_Roof_wood_0.geometry} material={materials['Roof wood']} position={[8.24, 3.54, 8.66]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_roof_Constructive_wood_0.geometry} material={materials['Constructive wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_roof_Roof_wood_0.geometry} material={materials['Roof wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Garage_roof_White_wood_0.geometry} material={materials['White wood']} position={[-5.75, 5.91, 14.26]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Roof_White_wood_0.geometry} material={materials['White wood']} position={[12.54, 5.91, -1.93]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_walls_Bathroom_walls_0.geometry} material={materials['Bathroom walls']} position={[8.24, 3.54, 8.66]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_walls_White_drywall_0.geometry} material={materials['White drywall']} position={[8.24, 3.54, 8.66]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Exterior_walls_White_wood_0.geometry} material={materials['White wood']} position={[8.24, 3.54, 8.66]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.Porch_Stairs_Stone_paths_0001.geometry} material={materials['Stone paths_0']} position={[21.67, 0.63, -1.07]} scale={0.82} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1001.geometry} material={materials.pine} position={[6.36, 1.56, -14.25]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1002.geometry} material={materials.pine} position={[-22.82, 1.56, -13.55]} scale={2.03} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1003.geometry} material={materials.pine} position={[7.79, 0.59, 18.11]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1004.geometry} material={materials.pine} position={[-21.12, 1.39, 22.22]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1005.geometry} material={materials.pine} position={[-38.47, -0.71, 14.24]} scale={2.03} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1006.geometry} material={materials.pine} position={[-34.58, 1.56, -6.01]} scale={1.34} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1007.geometry} material={materials.pine} position={[3.07, 1.54, 20.46]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1008.geometry} material={materials.pine} position={[-6.5, 1.39, 20.69]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1009.geometry} material={materials.pine} position={[-46.28, -0.71, 0.31]} scale={2.03} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1010.geometry} material={materials.pine} position={[-3.32, 0.34, 20.26]} scale={1.43} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1011.geometry} material={materials.pine} position={[-10.09, 1.7, 24.24]} scale={1.43} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1012.geometry} material={materials.pine} position={[-23.8, 1.49, 24.56]} scale={1.43} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1013.geometry} material={materials.pine} position={[7.79, 0.59, -20.88]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1014.geometry} material={materials.pine} position={[7.69, 1.3, -28.35]} scale={2.45} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1015.geometry} material={materials.pine} position={[-6.26, 1.7, -20.75]} scale={1.43} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1016.geometry} material={materials.pine} position={[-23.8, 1.49, -14.42]} scale={1.43} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1017.geometry} material={materials.pine} position={[14, 0, 0]} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1018.geometry} material={materials.pine} position={[-19.63, 1.3, -22.68]} scale={2.45} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1019.geometry} material={materials.pine} position={[20.83, 1.3, -28.35]} scale={2.45} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1020.geometry} material={materials.pine} position={[-7.21, 1.3, -28.35]} scale={2.45} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1021.geometry} material={materials.pine} position={[14.54, 1.3, -33.05]} scale={1.62} />
+      <mesh fog={true} receiveShadow castShadow geometry={nodes.pine1022.geometry} material={materials.pine} position={[14.6, 1.56, 19.78]} />
     </group>
   )
 }
