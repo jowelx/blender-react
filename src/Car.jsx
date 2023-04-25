@@ -6,85 +6,85 @@ Command: npx gltfjsx@6.1.4 ../public/deliveryScene/car.gltf
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import useScrollAnimation from './hooks/scrollAnimation'
-export function Model(props) {
+export function ModelCar(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/deliveryScene/car.gltf')
   const setRef= useScrollAnimation(animations,10)
   return (
-    <group ref={setRef} {...props} dispose={null}>
+    <group ref={setRef} {...props} dispose={null} rotation={[0,-20,0]} position={[0.2,-1,-1.4]} scale={[0.2,0.2,0.2]}>
       <group name="Scene">
         <group name="Sketchfab_model002" position={[26.74, 1.62, 18.35]} rotation={[-1.57, 0, -2.96]} scale={0.5}>
           <group name="Mercedes_Sprinter_2006_pt2c4dfbx001" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
             <group name="Object_2001">
               <group name="RootNode001">
                 <group name="Autre001" position={[26.64, 0.98, 150.14]}>
-                  <mesh name="Autre_Autre_0" geometry={nodes.Autre_Autre_0.geometry} material={materials.Autre} />
+                  <mesh receiveShadow castShadow name="Autre_Autre_0" geometry={nodes.Autre_Autre_0.geometry} material={materials.Autre} />
                 </group>
                 <group name="Carrosserie001" position={[66.01, -39.71, 157.12]}>
                   <group name="Carrosserie_Carrosserie_0">
-                    <mesh name="Carrosserie_Carrosserie_0_1" geometry={nodes.Carrosserie_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
-                    <mesh name="Carrosserie_Carrosserie_0_2" geometry={nodes.Carrosserie_Carrosserie_0_2.geometry} material={materials.Artis} />
+                    <mesh receiveShadow castShadow name="Carrosserie_Carrosserie_0_1" geometry={nodes.Carrosserie_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh receiveShadow castShadow name="Carrosserie_Carrosserie_0_2" geometry={nodes.Carrosserie_Carrosserie_0_2.geometry} material={materials.Artis} />
                   </group>
                 </group>
                 <group name="Carrosserie_5001" position={[66.01, -39.71, 157.12]}>
-                  <mesh name="Carrosserie_5_Carrosserie_5_0" geometry={nodes.Carrosserie_5_Carrosserie_5_0.geometry} material={materials.Carrosserie_5} />
+                  <mesh receiveShadow castShadow name="Carrosserie_5_Carrosserie_5_0" geometry={nodes.Carrosserie_5_Carrosserie_5_0.geometry} material={materials.Carrosserie_5} />
                 </group>
                 <group name="Chassis001" position={[26.64, 0.98, 150.14]}>
-                  <mesh name="Chassis_Chassis_0" geometry={nodes.Chassis_Chassis_0.geometry} material={materials.Chassis} />
+                  <mesh receiveShadow castShadow name="Chassis_Chassis_0" geometry={nodes.Chassis_Chassis_0.geometry} material={materials.Chassis} />
                 </group>
                 <group name="Chassis_2001" position={[26.64, 0.98, 150.14]}>
-                  <mesh name="Chassis_2_Chassis_2_0" geometry={nodes.Chassis_2_Chassis_2_0.geometry} material={materials.Chassis_2} />
+                  <mesh receiveShadow castShadow name="Chassis_2_Chassis_2_0" geometry={nodes.Chassis_2_Chassis_2_0.geometry} material={materials.Chassis_2} />
                 </group>
                 <group name="Interieur001" position={[53.17, 6.23, 148.02]}>
-                  <mesh name="Interieur_Interrieur_0" geometry={nodes.Interieur_Interrieur_0.geometry} material={materials.Interrieur} />
+                  <mesh receiveShadow castShadow name="Interieur_Interrieur_0" geometry={nodes.Interieur_Interrieur_0.geometry} material={materials.Interrieur} />
                 </group>
                 <group name="Phare001" position={[26.64, 0.98, 150.14]}>
-                  <mesh name="Phare_Phare_0" geometry={nodes.Phare_Phare_0.geometry} material={materials.Phare} />
+                  <mesh receiveShadow castShadow name="Phare_Phare_0" geometry={nodes.Phare_Phare_0.geometry} material={materials.Phare} />
                 </group>
                 <group name="Porte_1001" position={[-110.79, -7.88, -376.39]} rotation={[-Math.PI, 1.31, -Math.PI]}>
-                  <mesh name="Porte_1__0" geometry={nodes.Porte_1__0.geometry} material={materials.Porte_2__0} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
-                  <mesh name="Porte_1_Autre_0" geometry={nodes.Porte_1_Autre_0.geometry} material={materials.Autre} rotation={[Math.PI, -1.12, Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_1__0" geometry={nodes.Porte_1__0.geometry} material={materials.Porte_2__0} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_1_Autre_0" geometry={nodes.Porte_1_Autre_0.geometry} material={materials.Autre} rotation={[Math.PI, -1.12, Math.PI]} />
                   <group name="Porte_1_Carrosserie_0" position={[-0.34, 1.83, -1.58]} rotation={[Math.PI, -1.29, Math.PI]}>
-                    <mesh name="Porte_1_Carrosserie_0_1" geometry={nodes.Porte_1_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
-                    <mesh name="Porte_1_Carrosserie_0_2" geometry={nodes.Porte_1_Carrosserie_0_2.geometry} material={materials.Artis} />
+                    <mesh receiveShadow castShadow name="Porte_1_Carrosserie_0_1" geometry={nodes.Porte_1_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh receiveShadow castShadow name="Porte_1_Carrosserie_0_2" geometry={nodes.Porte_1_Carrosserie_0_2.geometry} material={materials.Artis} />
                   </group>
-                  <mesh name="Porte_1_Interrieur_0" geometry={nodes.Porte_1_Interrieur_0.geometry} material={materials.Interrieur} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_1_Interrieur_0" geometry={nodes.Porte_1_Interrieur_0.geometry} material={materials.Interrieur} position={[-1.07, 0, 0.79]} rotation={[Math.PI, -1.27, Math.PI]} />
                 </group>
                 <group name="Porte_2001" position={[104.9, -7.88, -377.94]} rotation={[Math.PI, -1.4, Math.PI]}>
-                  <mesh name="Porte_2__0" geometry={nodes.Porte_2__0.geometry} material={materials.Porte_2__0} rotation={[-Math.PI, 1.21, -Math.PI]} />
-                  <mesh name="Porte_2_Autre_0" geometry={nodes.Porte_2_Autre_0.geometry} material={materials.Autre} rotation={[-Math.PI, 1.21, -Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_2__0" geometry={nodes.Porte_2__0.geometry} material={materials.Porte_2__0} rotation={[-Math.PI, 1.21, -Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_2_Autre_0" geometry={nodes.Porte_2_Autre_0.geometry} material={materials.Autre} rotation={[-Math.PI, 1.21, -Math.PI]} />
                   <group name="Porte_2_Carrosserie_0" rotation={[-Math.PI, 1.27, -Math.PI]}>
-                    <mesh name="Porte_2_Carrosserie_0_1" geometry={nodes.Porte_2_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
-                    <mesh name="Porte_2_Carrosserie_0_2" geometry={nodes.Porte_2_Carrosserie_0_2.geometry} material={materials.Artis} />
+                    <mesh receiveShadow castShadow name="Porte_2_Carrosserie_0_1" geometry={nodes.Porte_2_Carrosserie_0_1.geometry} material={materials.Carrosserie} />
+                    <mesh receiveShadow castShadow name="Porte_2_Carrosserie_0_2" geometry={nodes.Porte_2_Carrosserie_0_2.geometry} material={materials.Artis} />
                   </group>
-                  <mesh name="Porte_2_Interrieur_0" geometry={nodes.Porte_2_Interrieur_0.geometry} material={materials.Interrieur} rotation={[-Math.PI, 1.27, -Math.PI]} />
+                  <mesh receiveShadow castShadow name="Porte_2_Interrieur_0" geometry={nodes.Porte_2_Interrieur_0.geometry} material={materials.Interrieur} rotation={[-Math.PI, 1.27, -Math.PI]} />
                 </group>
                 <group name="Porte_avnt_1001" position={[129.72, -16.74, 228.3]} rotation={[0, -1.48, 0]}>
-                  <mesh name="Porte_avnt_1_Autre_0" geometry={nodes.Porte_avnt_1_Autre_0.geometry} material={materials.Autre} rotation={[0, 1.44, 0]} />
-                  <mesh name="Porte_avnt_1_Carrosserie_0" geometry={nodes.Porte_avnt_1_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[0, 1.44, 0]} />
-                  <mesh name="Porte_avnt_1_Chassis_0" geometry={nodes.Porte_avnt_1_Chassis_0.geometry} material={materials.Chassis} rotation={[0, 1.45, 0]} />
-                  <mesh name="Porte_avnt_1_Interrieur_0" geometry={nodes.Porte_avnt_1_Interrieur_0.geometry} material={materials.Interrieur} rotation={[0, 1.44, 0]} />
-                  <mesh name="Porte_avnt_1_Vitre_0" geometry={nodes.Porte_avnt_1_Vitre_0.geometry} material={materials.Vitre} rotation={[0, 1.44, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_1_Autre_0" geometry={nodes.Porte_avnt_1_Autre_0.geometry} material={materials.Autre} rotation={[0, 1.44, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_1_Carrosserie_0" geometry={nodes.Porte_avnt_1_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[0, 1.44, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_1_Chassis_0" geometry={nodes.Porte_avnt_1_Chassis_0.geometry} material={materials.Chassis} rotation={[0, 1.45, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_1_Interrieur_0" geometry={nodes.Porte_avnt_1_Interrieur_0.geometry} material={materials.Interrieur} rotation={[0, 1.44, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_1_Vitre_0" geometry={nodes.Porte_avnt_1_Vitre_0.geometry} material={materials.Vitre} rotation={[0, 1.44, 0]} />
                 </group>
                 <group name="Porte_avnt_2001" position={[-134.31, -16.74, 228.3]} rotation={[0, 1.48, 0]}>
-                  <mesh name="Porte_avnt_2_Autre_0" geometry={nodes.Porte_avnt_2_Autre_0.geometry} material={materials.Autre} rotation={[0, -1.46, 0]} />
-                  <mesh name="Porte_avnt_2_Carrosserie_0" geometry={nodes.Porte_avnt_2_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[0, -1.46, 0]} />
-                  <mesh name="Porte_avnt_2_Chassis_0" geometry={nodes.Porte_avnt_2_Chassis_0.geometry} material={materials.Chassis} rotation={[0, -1.47, 0]} />
-                  <mesh name="Porte_avnt_2_Interrieur_0" geometry={nodes.Porte_avnt_2_Interrieur_0.geometry} material={materials.Interrieur} rotation={[0, -1.46, 0]} />
-                  <mesh name="Porte_avnt_2_Vitre_0" geometry={nodes.Porte_avnt_2_Vitre_0.geometry} material={materials.Vitre} rotation={[0, -1.46, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_2_Autre_0" geometry={nodes.Porte_avnt_2_Autre_0.geometry} material={materials.Autre} rotation={[0, -1.46, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_2_Carrosserie_0" geometry={nodes.Porte_avnt_2_Carrosserie_0.geometry} material={materials.Carrosserie} rotation={[0, -1.46, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_2_Chassis_0" geometry={nodes.Porte_avnt_2_Chassis_0.geometry} material={materials.Chassis} rotation={[0, -1.47, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_2_Interrieur_0" geometry={nodes.Porte_avnt_2_Interrieur_0.geometry} material={materials.Interrieur} rotation={[0, -1.46, 0]} />
+                  <mesh receiveShadow castShadow name="Porte_avnt_2_Vitre_0" geometry={nodes.Porte_avnt_2_Vitre_0.geometry} material={materials.Vitre} rotation={[0, -1.46, 0]} />
                 </group>
                 <group name="Symmetry001">
                   <group name="Null" position={[110.11, -124.87, 16.2]} rotation={[1.83, 0, -Math.PI / 2]}>
                     <group name="Cylinder001" position={[-237.63, 2.46, -65.7]}>
-                      <mesh name="Cylinder_Mat_0" geometry={nodes.Cylinder_Mat_0.geometry} material={materials.material} />
+                      <mesh receiveShadow castShadow name="Cylinder_Mat_0" geometry={nodes.Cylinder_Mat_0.geometry} material={materials.material} />
                     </group>
                     <group name="Cylinder_1" position={[237.63, 2.46, 65.7]}>
-                      <mesh name="Cylinder_1_Mat_0" geometry={nodes.Cylinder_1_Mat_0.geometry} material={materials.material} />
+                      <mesh receiveShadow castShadow name="Cylinder_1_Mat_0" geometry={nodes.Cylinder_1_Mat_0.geometry} material={materials.material} />
                     </group>
                   </group>
                 </group>
                 <group name="Vitre001" position={[41.18, -6.27, 81.94]}>
-                  <mesh name="Vitre_Vitre_0" geometry={nodes.Vitre_Vitre_0.geometry} material={materials.Vitre} />
+                  <mesh receiveShadow castShadow name="Vitre_Vitre_0" geometry={nodes.Vitre_Vitre_0.geometry} material={materials.Vitre} />
                 </group>
               </group>
             </group>
@@ -114,8 +114,8 @@ export function Model(props) {
             <group name="Vitre" position={[41.18, -6.27, 81.93]} />
           </group>
         </group>
-        <mesh name="Material2004" geometry={nodes.Material2004.geometry} material={materials['material.001']} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
-        <mesh name="Material3" geometry={nodes.Material3.geometry} material={materials.material_0} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
+        <mesh receiveShadow castShadow name="Material2004" geometry={nodes.Material2004.geometry} material={materials['material.001']} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
+        <mesh receiveShadow castShadow name="Material3" geometry={nodes.Material3.geometry} material={materials.material_0} position={[24.84, -2.58, -2.53]} rotation={[-Math.PI / 2, 0.04, 0]} scale={0.02} />
       </group>
     </group>
   )

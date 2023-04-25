@@ -2,26 +2,11 @@ import * as THREE from "three";
 import React, { useEffect, useRef, useState, useContext } from "react";
 import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
-import { Model } from "./Car";
-import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
-import { Fog } from "three";
-
+import { ModelAvion } from "./Avion";
+import { Model } from "./Mundi";
 // Crea la instancia del renderizador y establece el nivel de filtrado anisotrópico
 
 function App() {
-  function CameraControls() {
-    const { camera } = useThree();
-    camera.position.set(0, 0, 0); // ajusta la posición de la cámara
-    camera.rotation.set(0, 10, 0); // ajusta la rotación de la cámara
-
-    return null;
-  }
-  const scene = new THREE.Scene();
-  const hdrTextureUrl = new URL(".//bg.hdr", import.meta.url);
-  const hdrTextureLoader = new RGBELoader();
-  const hdrTexture = hdrTextureLoader.load(hdrTextureUrl);
-  console.log(hdrTexture);
-  const loader = new RGBELoader();
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -44,7 +29,7 @@ function App() {
           alignItems: "flex-start",
           justifyContent: "center",
           padding: 10,
-          background: "linear-gradient(red,blue)",
+          background: "linear-gradient(rgb(10,0,20),rgb(240,235,255))",
           height: "100vh",
           width: "100vw",
           overflow: "hidden",
@@ -60,14 +45,49 @@ function App() {
             right: 0,
           }}
         >
-          <video style={{ width: "100%" }} autoPlay muted loop>
-            <source src="fondo2.webm" type="video/webm" />
+          <video style={{ width: "100%", opacity: 0.5 }} autoPlay muted loop>
+            <source src="clouds.mp4" type="video/mp4" />
           </video>
         </div>
-
-        <Canvas shadows camera={{ rotation: [0, 0, 0] }}>
+        <div
+          style={{
+            position: "absolute",
+            zIndex: 9999,
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+          }}
+        >
+          <video
+            style={{
+              width: "100%",
+              opacity: 0.2,
+              transform: "rotate(180deg)",
+            }}
+            autoPlay
+            muted
+            loop
+          >
+            <source src="clouds.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          style={{
+            background:
+              "linear-gradient(90deg,rgba(10,0,20,0)80%,rgba(1,0,20,0.5)100%)",
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 9999,
+            opacity: 1,
+          }}
+        ></div>
+        <Canvas shadows camera={{ rotation: [0, 1, 0] }}>
           <fog attach="fog" args={["#333333", -10, 100]} />
-          <ambientLight intensity={0.4} />
+          <ambientLight intensity={0.1} />
           <directionalLight
             rotation={[80, 300, 0]}
             castShadow
@@ -76,13 +96,16 @@ function App() {
             shadow-camera-near={0.5}
             shadow-camera-far={500}
             position={[-4, 10, -4]}
-            color="rgb(240,190,120)"
-            intensity={1.4}
+            color="rgb(240,200,180)"
+            intensity={2}
           />
           <Bounds>
             <Model />
+            <ModelAvion />
           </Bounds>
-          {<OrbitControls />}
+          {
+            //<OrbitControls />
+          }
         </Canvas>
       </div>
     </div>

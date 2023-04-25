@@ -14,9 +14,9 @@ export function ModelAvion(props) {
   return (
     <group ref={setRef} {...props} dispose={null} position={[-2,-2,0]}>
       <group name="Scene">
-        <mesh name="Miss-Veedoh" geometry={nodes['Miss-Veedoh'].geometry} material={materials['Miss-veedoh']} position={[0.09, 2.14, 3.38]} rotation={[-0.49, 0.09, 0.01]} scale={[0.002,0.002,0.002]}>
-          <mesh name="Hélice" geometry={nodes.Hélice.geometry} material={materials['Miss-veedoh']} position={[-188.49, 0, -4.12]} rotation={[-0.11, 0, 0]} />
-          <mesh name="Gouvernaille" geometry={nodes.Gouvernaille.geometry} material={materials['Miss-veedoh']} />
+        <mesh receiveShadow castShadow  name="Miss-Veedoh" geometry={nodes['Miss-Veedoh'].geometry} material={materials['Miss-veedoh']} position={[0.09, 2.14, 3.38]} rotation={[-0.49, 0.09, 0.01]} scale={[0.002,0.002,0.002]}>
+          <mesh receiveShadow castShadow  name="Hélice" geometry={nodes.Hélice.geometry} material={materials['Miss-veedoh']} position={[-188.49, 0, -4.12]} rotation={[-0.11, 0, 0]} />
+          <mesh receiveShadow castShadow  name="Gouvernaille" geometry={nodes.Gouvernaille.geometry} material={materials['Miss-veedoh']} />
         </mesh>
  </group>
     </group>
