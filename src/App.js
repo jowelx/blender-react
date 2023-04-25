@@ -29,7 +29,7 @@ function App() {
           alignItems: "flex-start",
           justifyContent: "center",
           padding: 10,
-          background: "linear-gradient(rgb(10,0,20),rgb(240,235,255))",
+          background: "linear-gradient(rgb(10,0,20),rgb(255,255,240))",
           height: "100vh",
           width: "100vw",
           overflow: "hidden",
@@ -45,7 +45,7 @@ function App() {
             right: 0,
           }}
         >
-          <video style={{ width: "100%", opacity: 0.5 }} autoPlay muted loop>
+          <video style={{ width: "100%", opacity: 0.4 }} autoPlay muted loop>
             <source src="clouds.mp4" type="video/mp4" />
           </video>
         </div>
@@ -87,7 +87,7 @@ function App() {
         ></div>
         <Canvas shadows camera={{ rotation: [0, 1, 0] }}>
           <fog attach="fog" args={["#333333", -10, 100]} />
-          <ambientLight intensity={0.1} />
+          <ambientLight intensity={0.15} />
           <directionalLight
             rotation={[80, 300, 0]}
             castShadow
@@ -97,7 +97,7 @@ function App() {
             shadow-camera-far={500}
             position={[-4, 10, -4]}
             color="rgb(240,200,180)"
-            intensity={2}
+            intensity={3}
           />
           <Bounds>
             <Model />
