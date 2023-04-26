@@ -4,6 +4,7 @@ import { Canvas, useFrame, useThree } from "react-three-fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
 import { ModelAvion } from "./Avion";
 import { Model } from "./Mundi";
+import { ArtisSfere } from "./ArtisSfere";
 // Crea la instancia del renderizador y establece el nivel de filtrado anisotrópico
 
 function App() {
@@ -102,6 +103,7 @@ function App() {
           <Bounds>
             <Model />
             <ModelAvion />
+            <ArtisSfere />
           </Bounds>
           {
             //<OrbitControls />
