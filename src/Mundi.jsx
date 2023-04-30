@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.1.4 public/Mundi.glb
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import useScrollAnimation from './hooks/scrollAnimation'
-export function Model(props) {
+export function ModelGraficas(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/Mundi.glb')
   const { actions } = useAnimations(animations, group)
