@@ -31,7 +31,7 @@ function App() {
         style={{ position: "fixed", zIndex: 99999 }}
         onClick={() => handleChangeScena()}
       >
-        Cambio de escena
+        Change scene
       </button>
       {scene ? (
         <div
