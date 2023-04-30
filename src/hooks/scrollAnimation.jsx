@@ -23,7 +23,7 @@ function useScrollAnimation(animations, scrollRange) {
     };
   }, []);
 
-  const FPS = 40;
+  const FPS = 25;
 
   useEffect(() => {
     // let percentScroll = (scroll * 100) / windowHeight;
